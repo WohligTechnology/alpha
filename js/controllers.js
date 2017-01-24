@@ -746,8 +746,12 @@ $scope.sendEmail= function(contactData){
             location: "New Delhi"
         }];
         angular.module('ui.bootstrap.demo', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
-      
-          $scope.rate = 3;
+
+          $scope.rate1 = 1;
+          $scope.rate2 = 2;
+          $scope.rate3 = 3;
+          $scope.rate4 = 4;
+          $scope.rate5 = 5;
           $scope.max = 5;
           $scope.isReadonly = true;
 
