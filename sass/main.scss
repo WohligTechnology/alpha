@@ -9,7 +9,7 @@
 @import "../bower_components/fancyBox/source/jquery.fancybox.css";
 @import "../bower_components/swiper/dist/css/swiper.min.css";
 @import "../bower_components/smart-app-banner/smart-app-banner.css";
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+// @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 /* Bootstrap Variables Goes Here */
 $brand-primary: #0d9dff !default;
 $brand-success: #84ce3c !default;
@@ -23,6 +23,10 @@ $font-family-sans-serif: 'Roboto', 'Norican','Reem Kufi', Arial, sans-serif !def
 @font-face {
     font-family: "REVOLUTION";
     src: url("../fonts/REVOLUTION.ttf");
+}
+@font-face {
+    font-family: "Glyphicons Halflings";
+    src: url("../fonts/glyphicons-halflings-regular.ttf");
 }
 /* mixing*/
 @mixin placeholder {
