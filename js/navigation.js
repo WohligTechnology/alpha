@@ -80,6 +80,18 @@ var navigationservice = angular.module('navigationservice', [])
     //     subnav: []
     // },
     {
+        name: "Quality Policy",
+        classis: "",
+        anchor: "quality-policy",
+        subnav: []
+    },
+    {
+        name: "Certifications",
+        classis: "",
+        anchor: "certifications",
+        subnav: []
+    },
+    {
         name: "News",
         classis: "",
         anchor: "news",

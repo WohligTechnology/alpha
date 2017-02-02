@@ -1057,3 +1057,25 @@ right: 10px;
   position: absolute;
 bottom: 0;
 }
+.certificate-holder{
+  text-align: center;
+  padding: 20px;
+  img{
+      box-shadow: -2px 3px 4px 2px lightgrey;
+  }
+}
+.mrl-50{
+  margin: 0 50px;
+}
+.certify{
+  a{
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+  // .fancybox-wrap{
+  //   .fancybox-nav{
+  //     display: none;
+  //   }
+  // }

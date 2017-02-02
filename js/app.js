@@ -39,6 +39,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'NewsDetailCtrl'
         })
+        .state('certifications', {
+            url: "/certifications",
+            templateUrl: "views/template.html",
+            controller: 'CertificationsCtrl'
+        })
         .state('flexible', {
             url: "/flexible",
             templateUrl: "views/template.html",
@@ -174,15 +179,15 @@ firstapp.directive('onlyDigits', function () {
         }
     };
 })
-firstapp.directive('fancybox', function ($document) {
+firstapp.directive('fancyboxBox', function($document) {
     return {
         restrict: 'EA',
         replace: false,
-        link: function (scope, element, attr) {
+        link: function(scope, element, attr) {
             var $element = $(element);
             var target;
             if (attr.rel) {
-                target = $("[rel='" + attr.rel + "']");
+               target = $("[rel='" + attr.rel + "']");
             } else {
                 target = element;
             }
@@ -191,7 +196,8 @@ firstapp.directive('fancybox', function ($document) {
                 openEffect: 'fade',
                 closeEffect: 'fade',
                 closeBtn: true,
-                padding: 0,
+
+        galleryNavigation: 'keys',
                 helpers: {
                     media: {}
                 }

@@ -106,6 +106,12 @@ $scope.secondTab = false;
         ];
         $scope.news = [
           {
+              "id": '8',
+              "img": "img/news/416x300/6.jpg",
+              "date": "January 2017",
+              "title": "Packaging Trends in 2017"
+          },
+          {
              "id": '7',
              "img": "img/news/h8.jpg",
              "date": "January 2017",
@@ -118,6 +124,7 @@ $scope.secondTab = false;
            "title": "Meet Alpha’s Plastic Super Family in Mexico!"
 
        },
+
          {
              "id": '2',
              "img": "img/news/416x300/3.jpg",
@@ -314,6 +321,20 @@ $scope.secondTab = false;
                       "desc4": "This new range of Safe & Secure Shrink Film protects the product from pilferage and dust in transit so that the product reaches its destination unharmed and unaltered. Once it reaches its destination, the product can be easily differentiated from the competition due to its clarity, neatness, and shine. Due to its “anti-fog” technology, even at sub-0 degree temperature, the product is easily visible without any sign of water droplets on the film.",
                       "desc5": "This range of Safe & Secure film is a result of over one year of development as we looked at shrinkage, holding force, and anti-fog properties just right. Alpha becomes the first to offer such film in India and having already tied up with a few brand-owners, this range of Shrink Film is a drastic improvement over other packaging methods such as PVC shrink film (gives off high odor) and cling film (not pilferage proof)."
                     }
+
+                    break;
+                case '8':
+                    $scope.newDetailss = {
+                      "img": "img/news/1027x553/6.jpg",
+                      "title": "Packaging Trends in 2017",
+                      "date": "January 2017",
+                      "desc": "India ended 2016 with a bang, with the government banning old high-value currency notes to curb black economy. The knock-on effect of that was a sudden slowdown in demand across all industries as the common man struggled to make ends meet due to limited availability of cash. It has been over two months since the shock move by the Modi government and it looks like the market is returning to ‘business-as-usual’. Although, every businessman knows that ‘business-as-usual’ doesn’t quite mean the same as it used to before November 8, 2016.",
+                      "desc2": "Over last few years, we have seen Indian packaging growth and development lean towards flexible packaging primarily due to limited shelf space in Indian houses. With various other advantages that flexible packaging offers over rigid packaging, such as better brand appeal, barrier properties and many more, the pace of development and quality has improved tremendously and at Alpha, we are playing our part by increasing our capacity and product offerings.",
+                      "desc3": "We launched the Mulch film in the beginning of 2017 and throughout the year, will look to increase awareness of such film in agricultural applications. India is an agriculture-based economy and we felt the need to add value to this industry. With this product Alpha has added a 'non-packaging' product to our portfolio, for the first time. The mulch film can increase crop yield by up to 33%.",
+                      "desc4": "As the Modi government introduced slew of reforms over next year, including the introduction of GST, and with the Indian packaging industry showing double-digit growth we have put in place our own expansion plans. Much of Alpha’s focus will be on POF shrink film and Mulch film as it looks to increase production capacity for both films this year.",
+                      "desc5": "At Alpha, we are as optimistic as ever about the Indian Growth Story and within that, the packaging industry. It is well known within the industry that packaging consumption per capita in India is 4 times less than China and about 10 times less than USA. With the Indian packaging industry pegged to grow from US$ 35 billion to US$73 billion by 2020, there is no other place Alpha would rather be."
+                    }
+
             default:
 
         }
@@ -360,7 +381,13 @@ $scope.secondTab = false;
                       "title":"POF Shrink Films - A must for the Indian market",
                       "image":"img/news/81.jpg"
 
-                    }
+                    },
+                    {
+                        "id":"8",
+                        "title":"Packaging Trends in 2017",
+                        "image":"img/news/417x258/6.jpg"
+
+                      }
 
         // ,{
         //     "id":"7",
@@ -467,6 +494,13 @@ $scope.secondTab = false;
     .controller('JourneyCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("journey"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Journey"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+
+    })
+    .controller('CertificationsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("certifications"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Certifications"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
 
