@@ -413,15 +413,7 @@ $scope.secondTab = false;
                         "title":"Packaging Trends in 2017",
                         "image":"img/news/417x258/6.jpg"
 
-                      }
-
-        // ,{
-        //     "id":"7",
-        //     "title":" POF Shrink Films - A must for the Indian market",
-        //     "image":"img/news/newsin/7.jpg"
-        //
-        //   }
-        ]
+                      }]
 
         $scope.newsdetail = [{
             "img": "",
