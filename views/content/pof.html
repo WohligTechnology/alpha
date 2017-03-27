@@ -1,14 +1,15 @@
 <div class="pof">
 
   <div class="banner">
-    <img src="img/pof/pof.jpg" alt="" class="img-responsive ban-full">
-    <!-- <img src="img/banner-ribbon.png" alt="" class="img-responsive banner-rib hidden-xs"> -->
+    <img ng-src="{{shrinkFilms[0].desktopimage | uploadpath}}" alt="" class="img-responsive ban-full">
+    <!-- <img src="img/pof/pof.jpg" alt="" class="img-responsive ban-full"> -->
   </div>
   <div class="red-sec">
     <div class="container">
       <div class="careers-sec">
-        <p>Our Safe and Secure<span>&trade;</span> Shrink Films protect the content inside the packaging from dust and moisture. They are highly
-          cost effective, have sheen and are transparent.</p>
+        <div ng-bind-html="shrinkFilms[0].content"></div>
+        <!-- <p>Our Safe and Secure<span>&trade;</span> Shrink Films protect the content inside the packaging from dust and moisture. They are highly
+          cost effective, have sheen and are transparent.</p> -->
       </div>
     </div>
   </div>
@@ -238,18 +239,18 @@
         <h2 class="text-center text-up font-revelution text-head ft-40">GALLERY</h2>
         <div class="gal">
           <div class="slider1 hidden-xs">
-            <flex-slider  class="carousel" flex-slide="item in imageslider track by $index" animation="slide"  sync="#carousel" slider-id="slider" slideshow="false">
+            <flex-slider  class="carousel" flex-slide="item in gallery track by $index" animation="slide"  sync="#carousel" slider-id="slider" slideshow="false">
                 <li>
-                    <img ng-src="{{item.image}}" alt="" >
+                    <img ng-src="{{item.image | uploadpath}}" alt="" >
                 </li>
             </flex-slider>
           </div>
 <!-- mobileslider -->
           <div class="slider1 visible-xs">
 
-              <flex-slider flex-slide="item in imageslider track by $index" animation="slide" animationloop="true" slideshow-Speed="3000">
+              <flex-slider flex-slide="item in gallery track by $index" animation="slide" animationloop="true" slideshow-Speed="3000">
                 <li>
-                    <img ng-src="{{item.image}}" alt="">
+                    <img ng-src="{{item.image | uploadpath}}" alt="">
                 </li>
             </flex-slider>
           </div>
@@ -259,10 +260,10 @@
           </div>
 <!-- carousel -->
             <div class="slider2 hidden-xs">
-    <flex-slider class="carousel" flex-slide="item in imagethumb track by $index" animation="slide" item-width="228" item-margin="5" move="1" slideshow-speed=1000 direction-nav="false" control-nav="false" as-nav-for="#slider" slider-id="carousel">
+    <flex-slider class="carousel" flex-slide="item in gallery track by $index" animation="slide" item-width="228" item-margin="5" move="1" slideshow-speed=1000 direction-nav="false" control-nav="false" as-nav-for="#slider" slider-id="carousel">
                 <li>
                   <div class="img-animated">
-                    <img ng-src="{{item.image}}" alt="" class="hover-sec">
+                    <img ng-src="{{item.thumbimage | uploadpath}}" alt="" class="hover-sec">
                   </div>
                 </li>
             </flex-slider>
@@ -278,7 +279,29 @@
       <div class="profile-desc">
         <img src="img/comma.png" alt="" class="img-responsive test-comma hidden-xs">
         <h2 class="text-center text-up font-revelution text-head color-red ft-40">TESTIMONIALS</h2>
-      	<flex-slider flex-slide="item in flexprofile track by $index"  item-margin="0" slideshow= "false">
+      	<flex-slider flex-slide="item in testimonial track by $index"  item-margin="0" slideshow= "false">
+          <li>
+            <div class="row pd100">
+              <div class="col-md-3">
+                <div class="profile-img" >
+                  <img src="img/PET/prof.jpg" alt=" " class="img-responsive ">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="profile-box">
+                  <div class="profile-info">
+                    <p ng-bind-html="item.content"></p>
+                    <!-- <p>{{item.desc}}</p> -->
+                    <h4>{{item.name}}</h4>
+                    <p class="company">{{item.cname}}</p>
+                    <p class="location">{{item.city}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </flex-slider>
+      	<!-- <flex-slider flex-slide="item in flexprofile track by $index"  item-margin="0" slideshow= "false">
           <li>
             <div class="row pd100">
               <div class="col-md-3">
@@ -298,7 +321,7 @@
               </div>
             </div>
           </li>
-        </flex-slider>
+        </flex-slider> -->
       </div>
     </div>
   </div>

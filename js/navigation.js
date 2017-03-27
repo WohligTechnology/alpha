@@ -201,5 +201,49 @@ var navigationservice = angular.module('navigationservice', [])
                }).then(callback);
            },
 
+           getProducts: function(callback) {
+               $http({
+                   url: adminurl + 'Products/search',
+                   method: 'POST',
+                   withCredentials: true
+               }).then(callback);
+           },
+           getShrinkFilm: function(callback) {
+               $http({
+                   url: adminurl + 'ShrinkFilm/search',
+                   method: 'POST',
+                   withCredentials: true
+               }).then(callback);
+           },
+           getBottles: function(callback) {
+               $http({
+                   url: adminurl + 'Bottles/search',
+                   method: 'POST',
+                   withCredentials: true
+               }).then(callback);
+           },
+           getSpecialityFilms: function(callback) {
+               $http({
+                   url: adminurl + 'SpecialityFilms/search',
+                   method: 'POST',
+                   withCredentials: true
+               }).then(callback);
+           },
+           getCollation: function(callback) {
+               $http({
+                   url: adminurl + 'Collation/search',
+                   method: 'POST',
+                   withCredentials: true
+               }).then(callback);
+           },
+           getAgricultural: function(callback) {
+               $http({
+                   url: adminurl + 'Agricultural/search',
+                   method: 'POST',
+                   withCredentials: true
+               }).then(callback);
+           },
+
+
     };
 });

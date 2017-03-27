@@ -552,12 +552,15 @@ $scope.secondTab = false;
              scope: $scope,
              windowClass: "mod-fix"
          });
+       };
+       NavigationService.getProducts(function(data){
+         console.log("data",data);
+         $scope.bagsLiners=data.data.data.results;
+         console.log($scope.bagsLiners,"$scope.bagsLiners");
+         $scope.gallery=$scope.bagsLiners[0].gallery;
+         $scope.testimonials=$scope.bagsLiners[0].testimonial;
 
-
-
-
-
- };
+       })
 
     $scope.bagcontactus= {};
  $scope.sendEmail= function(contactData){
@@ -634,12 +637,20 @@ $scope.secondTab = false;
          scope: $scope,
          windowClass: "mod-fix"
      })
-
-
-
-
-
-};
+   };
+   NavigationService.getSpecialityFilms(function(data){
+     console.log("data",data);
+     $scope.specialityFilms =data.data.data.results;
+   });
+   NavigationService.getCollation(function(data){
+     console.log(data,"data");
+     $scope.collations=data.data.data.results;
+     console.log("$scope.collations",$scope.collations);
+   });
+   NavigationService.getAgricultural(function(data){
+     console.log("data",data);
+     $scope.agricultural =data.data.data.results;
+   })
 $scope.contactus= {};
 $scope.sendEmail= function(contactData){
   console.log(contactData);
@@ -744,11 +755,14 @@ $scope.sendEmail= function(contactData){
              scope: $scope,
              windowClass: "mod-fix"
          });
-
-
-
-
- };
+       };
+       NavigationService.getShrinkFilm(function(data){
+         console.log("data",data);
+         $scope.shrinkFilms=data.data.data.results;
+         console.log("$scope.shrinkFilms",$scope.shrinkFilms);
+         $scope.gallery=$scope.shrinkFilms[0].gallery;
+         $scope.testimonial=$scope.shrinkFilms[0].testimonial;
+       })
      console.log("POF");   $scope.contactus= {};
  $scope.sendEmail= function(contactData){
    console.log(contactData);
@@ -837,9 +851,15 @@ $scope.sendEmail= function(contactData){
              templateUrl: "views/modal/enquiry.html",
              scope: $scope,
              windowClass: "mod-fix"
+         })};
+         NavigationService.getBottles(function(data){
+           console.log("data",data);
+           $scope.petBottles=data.data.data.results;
+           console.log("$scope.petBottles",$scope.petBottles);
+           $scope.gallery=$scope.petBottles[0].gallery;
+           console.log( $scope.gallery," $scope.gallery");
+           $scope.testimonial=$scope.petBottles[0].testimonial;
          })
-
- };
  $scope.contactus= {};
  $scope.sendEmail= function(contactData){
    console.log(contactData);

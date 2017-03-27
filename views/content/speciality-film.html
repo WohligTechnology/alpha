@@ -1,16 +1,18 @@
 <div class="speciality-film">
     <div class="banner">
-        <img src="img/films/films.jpg" alt="" class="img-responsive banfull widht100">
-        <!-- <img src="img/banner-ribbon.png" alt="" class="img-responsive banner-rib hidden-xs"> -->
+        <img ng-src="{{specialityFilms[0].image | uploadpath}}" alt="" class="img-responsive banfull widht100">
+        <!-- <img src="img/films/films.jpg" alt="" class="img-responsive banfull widht100"> -->
+
     </div>
 
 
     <div class="red-sec">
         <div class="container">
             <div class="careers-sec">
-                <p>Under Speciality Film, Alpha offers two products, Prevent &amp; Protect <span>&trade;</span> (Collation Shrink Film) and Support &amp; Safeguard <span>&trade;</span> (Agricultural Mulch Film). Both these products are an extension
+              <p ng-bind-html="specialityFilms[0].content"></p>
+                <!-- <p>Under Speciality Film, Alpha offers two products, Prevent &amp; Protect <span>&trade;</span> (Collation Shrink Film) and Support &amp; Safeguard <span>&trade;</span> (Agricultural Mulch Film). Both these products are an extension
                     of Alpha’s core strength in packaging and providing innovative solutions to add value across the supply chain.
-                </p>
+                </p> -->
             </div>
         </div>
     </div>
@@ -70,15 +72,15 @@
                 </div>
                 <div class="gal">
                     <div class="slider1 hidden-xs">
-                        <flex-slider flex-slide="item in imageslider track by $index" animation="slide" move="1" slideshowSpeed=1000 sync="#carousel" slider-id="slider" ng-if="tab == 1"  slideshow="false">
+                        <flex-slider flex-slide="item in collations[0].gallery track by $index" animation="slide" move="1" slideshowSpeed=1000 sync="#carousel" slider-id="slider" ng-if="tab == 1"  slideshow="false">
                             <li>
-                                <img ng-src="{{item.image}}" alt="">
+                                <img ng-src="{{item.image | uploadpath}}" alt="">
                             </li>
                         </flex-slider>
                     </div>
                     <!-- mobile-slider -->
                     <div class="slider1 visible-xs">
-    <flex-slider flex-slide="item in imageslider track by $index" animation="slide" animationloop="true" ng-if="tab == 1" slideshow-Speed="3000">
+    <flex-slider flex-slide="item in collations[0].gallery track by $index" animation="slide" animationloop="true" ng-if="tab == 1" slideshow-Speed="3000">
                           <li>
                               <img ng-src="{{item.image}}" alt="">
                           </li>
@@ -88,9 +90,9 @@
                     <div class="slider2 hidden-xs">
 
 
-                        <flex-slider flex-slide="item in imagethumb track by $index" animation="slide" item-width="228" item-margin="5" animationloop="true" move="1" slideshowSpeed=1000 direction-Nav="false" control-Nav="false" as-Nav-For="#slider" slider-id="carousel"  ng-if="tab == 1">
+                        <flex-slider flex-slide="item in collations[0].gallery track by $index" animation="slide" item-width="228" item-margin="5" animationloop="true" move="1" slideshowSpeed=1000 direction-Nav="false" control-Nav="false" as-Nav-For="#slider" slider-id="carousel"  ng-if="tab == 1">
                             <li>
-                                <img ng-src="{{item.image}}" alt="">
+                                <img ng-src="{{item.thumbimage | uploadpath}}" alt="">
                             </li>
                         </flex-slider>
 
@@ -102,25 +104,25 @@
 <!-- slider2 -->
 <!-- carousel -->
 <div class="slider1 hidden-xs">
-    <flex-slider flex-slide="item in imageslider2 track by $index" animation="slide"  animationloop="true" move="1" slideshowSpeed=1000 sync="#carousel2" slider-id="slider2" ng-if="tab == 2"  slideshow="false">
+    <flex-slider flex-slide="item in agricultural[0].gallery track by $index" animation="slide"  animationloop="true" move="1" slideshowSpeed=1000 sync="#carousel2" slider-id="slider2" ng-if="tab == 2"  slideshow="false">
         <li>
-            <img ng-src="{{item.image}}" alt="">
+            <img ng-src="{{item.image | uploadpath}}" alt="">
         </li>
     </flex-slider>
 </div>
 <!-- mobileslider -->
 <div class="slider1 visible-xs">
-<flex-slider flex-slide="item in imageslider2 track by $index" animation="slide" animationloop="true" ng-if="tab == 2" slideshow-Speed="3000">
+<flex-slider flex-slide="item in agricultural[0].gallery track by $index" animation="slide" animationloop="true" ng-if="tab == 2" slideshow-Speed="3000">
       <li>
-          <img ng-src="{{item.image}}" alt="">
+          <img ng-src="{{item.image | uploadpath}}" alt="">
       </li>
   </flex-slider>
 </div>
 <!-- carousel -->
 <div class="slider2 hidden-xs">
-  <flex-slider flex-slide="item in imagethumb2 track by $index" animation="slide" item-width="228" item-margin="5" move="1" slideshowSpeed=1000 direction-Nav="false" control-Nav="false" as-Nav-For="#slider2" slider-id="carousel2" ng-if="tab == 2" slideshow="true">
+  <flex-slider flex-slide="item in agricultural[0].gallery track by $index" animation="slide" item-width="228" item-margin="5" move="1" slideshowSpeed=1000 direction-Nav="false" control-Nav="false" as-Nav-For="#slider2" slider-id="carousel2" ng-if="tab == 2" slideshow="true">
         <li>
-            <img ng-src="{{item.image}}" alt="">
+            <img ng-src="{{item.thumbimage | uploadpath}}" alt="">
         </li>
     </flex-slider>
 
@@ -136,27 +138,59 @@
         </div>
     </div>
 
-    <div class="testimonial-sec">
+    <div class="testimonial-sec" ng-if="tab==1">
         <img src="img/black-ribbon1.png" alt="" class="img-responsive test-banner hidden-xs">
         <div class="container">
             <div class="profile-desc">
                 <img src="img/comma.png" alt="" class="img-responsive test-comma hidden-xs">
-                <h2 class="text-center text-up font-revelution text-head color-red">TESTIMONIALS</h2>
-      	<flex-slider flex-slide="item in flexprofile track by $index"  item-margin="0" slideshow= "false">
+                <h2 class="text-center text-up font-revelution text-head color-red">TESTIMONIALS </h2>
+      	<flex-slider flex-slide="item in collations[0].testimonial track by $index"  item-margin="0" slideshow= "false">
                     <li>
                         <div class="row pd100">
                             <div class="col-md-3">
                                 <div class="profile-img">
-                                    <img ng-src="{{item.image}} " alt=" " class="img-responsive ">
+                                    <img src="img/PET/prof.jpg",alt=" " class="img-responsive ">
                                 </div>
                             </div>
                             <div class="col-md-8">
                                 <div class="profile-box">
                                     <div class="profile-info">
-                                        <p>{{item.desc}}</p>
+                                        <p ng-bind-html="item.content"></p>
+                                        <!-- <p>{{item.desc}}</p> -->
                                         <h4>{{item.name}}</h4>
-                                        <p class="company">{{item.company}}</p>
-                                        <p class="location">{{item.location}}</p>
+                                        <p class="company">{{item.cname}}</p>
+                                        <p class="location">{{item.city}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </flex-slider>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial-sec" ng-if="tab==2">
+        <img src="img/black-ribbon1.png" alt="" class="img-responsive test-banner hidden-xs">
+        <div class="container">
+            <div class="profile-desc">
+                <img src="img/comma.png" alt="" class="img-responsive test-comma hidden-xs">
+                <h2 class="text-center text-up font-revelution text-head color-red">TESTIMONIALS</h2>
+      	<flex-slider flex-slide="item in agricultural[0].testimonial track by $index"  item-margin="0" slideshow= "false">
+                    <li>
+                        <div class="row pd100">
+                            <div class="col-md-3">
+                                <div class="profile-img">
+                                    <img src="img/PET/prof.jpg", alt=" " class="img-responsive ">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="profile-box">
+                                    <div class="profile-info">
+                                        <p ng-bind-html="item.content"></p>
+                                        <!-- <p>{{item.desc}}</p> -->
+                                        <h4>{{item.name}}</h4>
+                                        <p class="company">{{item.cname}}</p>
+                                        <p class="location">{{item.city}}</p>
                                     </div>
                                 </div>
                             </div>
