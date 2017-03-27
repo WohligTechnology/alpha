@@ -152,5 +152,54 @@ var navigationservice = angular.module('navigationservice', [])
                    callback(data);
                });
            },
+
+           getHomeSlider: function(callback) {
+               $http({
+                   url: adminurl + 'HomeSlider/search',
+                   method: 'POST',
+                   withCredentials: true
+               }).then(callback);
+           },
+           getClients: function(callback) {
+               $http({
+                   url: adminurl + 'clients/search',
+                   method: 'POST',
+                   withCredentials: true
+               }).then(callback);
+           },
+           getJourney: function(callback) {
+               $http({
+                   url: adminurl + 'journey/search',
+                   method: 'POST',
+                   withCredentials: true
+               }).then(callback);
+           },
+           getLatestNews: function(callback) {
+               $http({
+                   url: adminurl + 'latestNews/search',
+                   method: 'POST',
+                   withCredentials: true
+               }).then(callback);
+           },
+           getProductStatistics: function(callback) {
+               $http({
+                   url: adminurl + 'productStatistics/search',
+                   method: 'POST',
+                   withCredentials: true
+               }).then(callback);
+           },
+
+           getDetailNews: function(id, callback) {
+               var data = {
+                   _id: id,
+               };
+               $http({
+                   url: adminurl + 'latestNews/getone',
+                   method: 'POST',
+                   withCredentials: true,
+                   data: data
+               }).then(callback);
+           },
+
     };
 });

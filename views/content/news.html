@@ -27,23 +27,24 @@
   </div>
 </div> -->
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6" ng-repeat="data in latestNews">
                   <div class="news-sec">
                       <div class="news-img">
-                          <img src="img/news/1027x553/6.jpg" alt="" class="img-responsive">
+                          <img ng-src="{{data.homepageimage|uploadpath}}" alt="" class="img-responsive">
                           <div class="date-sec">
-                              <span>January 2017</span>
+                              <span>{{data.date |date :'MMMM y'}}</span>
                           </div>
                       </div>
-                      <h4>Packaging Trends in 2017</h4>
-                      <p>India ended 2016 with a bang, with the government banning old high-value currency notes to curb black economy. The knock-on effect of that was a sudden slowdown in demand across all industries as the common man struggled to make ends meet due to limited availability of cash. It has been over two months since the shock move by the Modi government and it looks like the market is returning to ‘business-as-usual’.
+                      <h4 ng-bind-html="data.name">Packaging Trends in 2017</h4>
+                      <p ng-bind-html="data.content">India ended 2016 with a bang, with the government banning old high-value currency notes to curb black economy. The knock-on effect of that was a sudden slowdown in demand across all industries as the common man struggled to make ends meet due to limited availability of cash. It has been over two months since the shock move by the Modi government and it looks like the market is returning to ‘business-as-usual’.
                       </p>
-                      <button type="button" class="btn btn-default" ui-sref="news-detail({id:'8'})">Read more</button>
+                      <button type="button" class="btn btn-default" ui-sref="news-detail({id:data._id})">Read more</button>
+                      <!-- <button type="button" class="btn btn-default" ui-sref="news-detail({id:'8'})">Read more</button> -->
                   </div>
               </div>
 
 
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                     <div class="news-sec">
                         <div class="news-img">
                             <img src="img/news/8.jpg" alt="" class="img-responsive">
@@ -57,11 +58,11 @@
 
                         <a ui-sref="news-detail({id:'7'})"><button type="button" class="btn btn-default">Read more</button></a>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-6">
                   <div class="news-sec">
                       <div class="news-img">
@@ -161,7 +162,7 @@
                         <button type="button" class="btn btn-default" ui-sref="news-detail({id:'6'})">Read more</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
 

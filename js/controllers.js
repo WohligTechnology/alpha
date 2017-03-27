@@ -35,7 +35,27 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             }
 
           ];
+NavigationService.getHomeSlider(function(data){
+  console.log("data",data);
+  $scope.homeSliders=data.data.data.results;
+  console.log($scope.homeSliders,"$scope.homeSliders");
 
+});
+NavigationService.getClients(function(data){
+$scope.allClients=data.data.data.results;
+});
+NavigationService.getJourney(function(data){
+$scope.journey=data.data.data.results;
+})
+NavigationService.getLatestNews(function(data){
+$scope.latestNews=data.data.data.results;
+});
+NavigationService.getProductStatistics(function(data)
+{
+  console.log("data",data);
+  $scope.productStatistics=data.data.data.results;
+  console.log("$scope.productStatistics",$scope.productStatistics);
+});
 
 //           $scope.myslidesss=[];
 //
@@ -250,6 +270,12 @@ $scope.secondTab = false;
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
         $scope.stateId = $stateParams.id ;
+        NavigationService.getDetailNews($stateParams.id,function(data){
+          console.log("getDetailNews",data);
+          $scope.detailNews = data.data.data;
+          console.log("$scope.detailNews",$scope.detailNews);
+          $scope.relatedNewss =  $scope.detailNews.relatednews;
+        })
 
         switch ($stateParams.id) {
             case '1':
@@ -489,6 +515,10 @@ $scope.secondTab = false;
         $scope.menutitle = NavigationService.makeactive("News"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+        NavigationService.getLatestNews(function(data){
+        $scope.latestNews=data.data.data.results;
+        console.log("  $scope.latestNews",  $scope.latestNews);
+        });
 
     })
     .controller('JourneyCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -496,6 +526,10 @@ $scope.secondTab = false;
         $scope.menutitle = NavigationService.makeactive("Journey"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+        NavigationService.getJourney(function(data){
+        $scope.journey=data.data.data.results;
+        console.log("$scope.journey",$scope.journey);
+        })
 
     })
     .controller('CertificationsCtrl', function($scope, TemplateService, NavigationService, $timeout) {

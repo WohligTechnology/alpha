@@ -1751,6 +1751,18 @@ upload-image {
         margin-top: -20px;
     }
 }
+
+.j2{
+  min-height: 250px;
+  .jr2-text{
+    width: 100px !important;
+      position: absolute;
+      left: -7px;
+      top: 61px;
+  }
+}
+
+
 @import "sagar";
 @import "rishub"; // @import "fancybox-override";
 @import "mobile";

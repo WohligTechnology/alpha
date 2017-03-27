@@ -343,6 +343,16 @@ firstapp.directive('imageonload', function () {
         }
     };
 });
+firstapp.filter('htmlDecode', function() {
+    return function(value) {
+        return $("<div/>").html(value).text();
+    };
+});
+firstapp.filter('htmlToPlaintext', function() {
+    return function(text) {
+        return text ? String(text).replace(/<[^>]+>/gm, '') : '';
+    };
+});
 
 
 firstapp.directive('uploadImage', function ($http, $filter, $timeout) {
