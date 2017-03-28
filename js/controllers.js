@@ -502,15 +502,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
         NavigationService.getJourney(function(data) {
             $scope.journey = data.data.data.results;
-            console.log("$scope.journey", $scope.journey);
+            console.log("$scope.journeyBefore", $scope.journey);
             for (var i = 0; i < $scope.journey.length; i++) {
                 if ((i + 2) % 2 == 0) {
                   $scope.journey[i].side="right";
                 } else {
                   $scope.journey[i].side="left";
                 }
-            }
-          })
+              }
+            })
 
     })
     .controller('CertificationsCtrl', function($scope, TemplateService, NavigationService, $timeout) {

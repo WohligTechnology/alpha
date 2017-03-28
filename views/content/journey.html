@@ -8,13 +8,13 @@
 
     <ul class="timeline" >
 
-      <div class="" ng-repeat="j in journey">
-      <!-- <div class="" ng-repeat="j in journey |  orderBy: '-date'"> -->
+      <!-- <div class="" ng-repeat="j in journey"> -->
+      <div class="" ng-repeat="data in journey |  orderBy: '-date'">
 
 
-      <div class="" ng-if="j.side == 'right'">
+      <div class="" ng-if="data.side == 'right'">
         <li>
-          <div class="tldate">{{j.date |date : 'yyyy'}}</div>
+          <div class="tldate">{{data.date |date : 'yyyy'}}</div>
         </li>
 
         <li class="timeline-inverted" >
@@ -24,13 +24,13 @@
               <div class="journey-sec">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                   <div class="tl-img">
-                    <img ng-src="{{j.journeyimage|uploadpath}}" alt="" class="img-responsive">
+                    <img ng-src="{{data.journeyimage|uploadpath}}" alt="" class="img-responsive">
                     <!-- <img src="img/t1.jpg" alt="" class="img-responsive"> -->
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12 padding0">
                   <div class="tl-data">
-                    <p class="font-roboto" ng-bind-html="j.content">
+                    <p class="font-roboto" ng-bind-html="data.content">
                       <!-- Diversified to manufacture Mulch Film -->
                     </p>
                   </div>
@@ -43,9 +43,9 @@
         </li>
       </div>
 
-<div class="" ng-if="j.side == 'left'">
+<div class="" ng-if="data.side == 'left'">
   <li>
-    <div class="tldate">{{j.date |date : 'yyyy'}}</div>
+    <div class="tldate">{{data.date |date : 'yyyy'}}</div>
   </li>
 
   <li >
@@ -55,14 +55,14 @@
         <div class="journey-sec">
           <div class="col-md-6 padding0">
             <div class="tl-data text-right">
-              <p class="font-roboto" ng-bind-html="j.content">
+              <p class="font-roboto" ng-bind-html="data.content">
                 <!-- Diversified to manufacture Collation Shrink Film -->
               </p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="tl-img">
-              <img ng-src="{{j.journeyimage|uploadpath}}" alt="" class="img-responsive">
+              <img ng-src="{{data.journeyimage|uploadpath}}" alt="" class="img-responsive">
               <!-- <img src="img/t2.jpg" alt="" class="img-responsive"> -->
             </div>
           </div>
