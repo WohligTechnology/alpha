@@ -6,64 +6,76 @@
 
     </header>
 
-    <ul class="timeline">
-      <li>
-        <div class="tldate">2016</div>
-      </li>
+    <ul class="timeline" >
 
-      <li class="timeline-inverted">
-        <div class="tl-circ"></div>
-        <div class="timeline-panel line-right">
-          <div class="row">
-            <div class="journey-sec">
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="tl-img">
-                  <img src="img/t1.jpg" alt="" class="img-responsive">
+      <div class="" ng-repeat="j in journey">
+      <!-- <div class="" ng-repeat="j in journey |  orderBy: '-date'"> -->
+
+
+      <div class="" ng-if="j.side == 'right'">
+        <li>
+          <div class="tldate">{{j.date |date : 'yyyy'}}</div>
+        </li>
+
+        <li class="timeline-inverted" >
+          <div class="tl-circ"></div>
+          <div class="timeline-panel line-right">
+            <div class="row">
+              <div class="journey-sec">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="tl-img">
+                    <img ng-src="{{j.journeyimage|uploadpath}}" alt="" class="img-responsive">
+                    <!-- <img src="img/t1.jpg" alt="" class="img-responsive"> -->
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-12 padding0">
-                <div class="tl-data">
-                  <p class="font-roboto">
-                    Diversified to manufacture Mulch Film
-                  </p>
+                <div class="col-md-6 col-sm-6 col-xs-12 padding0">
+                  <div class="tl-data">
+                    <p class="font-roboto" ng-bind-html="j.content">
+                      <!-- Diversified to manufacture Mulch Film -->
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
+
+
           </div>
+        </li>
+      </div>
 
+<div class="" ng-if="j.side == 'left'">
+  <li>
+    <div class="tldate">{{j.date |date : 'yyyy'}}</div>
+  </li>
 
-        </div>
-      </li>
-
-      <li>
-        <div class="tldate">2015</div>
-      </li>
-
-      <li>
-        <div class="tl-circ"></div>
-        <div class="timeline-panel line-left">
-          <div class="row">
-            <div class="journey-sec">
-              <div class="col-md-6 padding0">
-                <div class="tl-data text-right">
-                  <p class="font-roboto">
-                    Diversified to manufacture Collation Shrink Film
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="tl-img">
-                  <img src="img/t2.jpg" alt="" class="img-responsive">
-                </div>
-              </div>
-
+  <li >
+    <div class="tl-circ"></div>
+    <div class="timeline-panel line-left">
+      <div class="row">
+        <div class="journey-sec">
+          <div class="col-md-6 padding0">
+            <div class="tl-data text-right">
+              <p class="font-roboto" ng-bind-html="j.content">
+                <!-- Diversified to manufacture Collation Shrink Film -->
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="tl-img">
+              <img ng-src="{{j.journeyimage|uploadpath}}" alt="" class="img-responsive">
+              <!-- <img src="img/t2.jpg" alt="" class="img-responsive"> -->
             </div>
           </div>
 
-
         </div>
-      </li>
-      <li>
+      </div>
+
+
+    </div>
+  </li>
+</div>
+</div>
+      <!-- <li>
         <div class="tldate">2013</div>
       </li>
 
@@ -293,6 +305,6 @@
             </div>
           </div>
         </div>
-      </li>
+      </li> -->
     </ul>
 </section>

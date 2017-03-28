@@ -9,89 +9,84 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
 
-        $scope.mySlides = [
-            {
-              "id":"1",
-              "img":"img/banner2.jpg",
-              "link":"pof"
-            },
-            {
-              "id":"2",
-              "img":"img/banner3.jpg",
-              "link":"speciality-film"
+        $scope.mySlides = [{
+                "id": "1",
+                "img": "img/banner2.jpg",
+                "link": "pof"
+            }, {
+                "id": "2",
+                "img": "img/banner3.jpg",
+                "link": "speciality-film"
             }
 
-          ];
-        $scope.mySlidesmobile = [
-            {
-              "id":"1",
-              "img":"img/mob/Pof(2).jpg",
-              "link":"pof"
-            },
-            {
-              "id":"2",
-              "img":"img/mob/Speciality-File(4).jpg",
-              "link":"speciality-film"
+        ];
+        $scope.mySlidesmobile = [{
+                "id": "1",
+                "img": "img/mob/Pof(2).jpg",
+                "link": "pof"
+            }, {
+                "id": "2",
+                "img": "img/mob/Speciality-File(4).jpg",
+                "link": "speciality-film"
             }
 
-          ];
-NavigationService.getHomeSlider(function(data){
-  console.log("data",data);
-  $scope.homeSliders=data.data.data.results;
-  console.log($scope.homeSliders,"$scope.homeSliders");
+        ];
+        NavigationService.getHomeSlider(function(data) {
+            console.log("data", data);
+            $scope.homeSliders = data.data.data.results;
+            console.log($scope.homeSliders, "$scope.homeSliders");
 
-});
-NavigationService.getClients(function(data){
-$scope.allClients=data.data.data.results;
-});
-NavigationService.getJourney(function(data){
-$scope.journey=data.data.data.results;
-})
-NavigationService.getLatestNews(function(data){
-$scope.latestNews=data.data.data.results;
-});
-NavigationService.getProductStatistics(function(data)
-{
-  console.log("data",data);
-  $scope.productStatistics=data.data.data.results;
-  console.log("$scope.productStatistics",$scope.productStatistics);
-});
+        });
+        NavigationService.getClients(function(data) {
+            $scope.allClients = data.data.data.results;
+        });
+        NavigationService.getJourney(function(data) {
+            $scope.journey = data.data.data.results;
+        })
+        NavigationService.getLatestNews(function(data) {
+            $scope.latestNews = data.data.data.results;
+        });
+        NavigationService.getProductStatistics(function(data) {
+            console.log("data", data);
+            $scope.productStatistics = data.data.data.results;
+            console.log("$scope.productStatistics", $scope.productStatistics);
+        });
 
-//           $scope.myslidesss=[];
-//
-//
-// $scope.startfrom = 0;
-$scope.secondTab = false;
-          $scope.clickMe2 =function (){
+        //           $scope.myslidesss=[];
+        //
+        //
+        // $scope.startfrom = 0;
+        $scope.secondTab = false;
+        $scope.clickMe2 = function() {
             // $scope.mySlides = [];
             $scope.secondTab = true;
             $scope.mySlides2 = _.reverse($scope.mySlides);
-            console.log('$scope.clickMe2',$scope.mySlides);
-          };
-          $scope.clickMe1 =function (){
-            $scope.secondTab = false;
-            if($scope.mySlides2){
-              $scope.mySlides = _.reverse($scope.mySlides2);
-            }
+            console.log('$scope.clickMe2', $scope.mySlides);
+        };
+        $scope.clickMe1 = function() {
+                $scope.secondTab = false;
+                if ($scope.mySlides2) {
+                    $scope.mySlides = _.reverse($scope.mySlides2);
+                }
 
             }
-// _.takeRight($scope.mySlides, 2);
+            // _.takeRight($scope.mySlides, 2);
 
-//
-//             console.log("id",id);
-//             var founIndex= _.findIndex($scope.mySlides,function(key){
-//             return key.id == id;
-//             });
-//             console.log("founIndex",founIndex);
-//               $scope.myslidesss=$scope.mySlides.splice(founIndex,1)
-//               console.log('myslidesss',$scope.myslidesss);
-//
-//         }
-// $scope.clickMe('1');
+        //
+        //             console.log("id",id);
+        //             var founIndex= _.findIndex($scope.mySlides,function(key){
+        //             return key.id == id;
+        //             });
+        //             console.log("founIndex",founIndex);
+        //               $scope.myslidesss=$scope.mySlides.splice(founIndex,1)
+        //               console.log('myslidesss',$scope.myslidesss);
+        //
+        //         }
+        // $scope.clickMe('1');
         // console.log("$scope.founIndexId",$scope.founIndexId);
-// $scope.myslidesss=
-// $scope.myslidesss= _.without($scope.mySlides , { 'id': '1'});
-// console.log("$scope.myslidesss",$scope.myslidesss);
+        // $scope.myslidesss=
+        // $scope.myslidesss= _.without($scope.mySlides , { 'id': '1'});
+        // console.log("$scope.myslidesss",$scope.myslidesss);
 
 
 
@@ -124,86 +119,88 @@ $scope.secondTab = false;
             'img/client/26.jpg',
             'img/client/27.jpg'
         ];
-        $scope.news = [
-          {
-              "id": '8',
-              "img": "img/news/416x300/6.jpg",
-              "date": "January 2017",
-              "title": "Packaging Trends in 2017"
-          },
-          {
-             "id": '7',
-             "img": "img/news/h8.jpg",
-             "date": "January 2017",
-             "title": "POF Shrink Films - A must for the Indian market"
-         },
-         {
-           "id": '1',
-           "img": "img/news/h1.jpg",
-           "date": "September 2016",
-           "title": "Meet Alpha’s Plastic Super Family in Mexico!"
+        $scope.news = [{
+                "id": '8',
+                "img": "img/news/416x300/6.jpg",
+                "date": "January 2017",
+                "title": "Packaging Trends in 2017"
+            }, {
+                "id": '7',
+                "img": "img/news/h8.jpg",
+                "date": "January 2017",
+                "title": "POF Shrink Films - A must for the Indian market"
+            }, {
+                "id": '1',
+                "img": "img/news/h1.jpg",
+                "date": "September 2016",
+                "title": "Meet Alpha’s Plastic Super Family in Mexico!"
 
-       },
+            },
 
-         {
-             "id": '2',
-             "img": "img/news/416x300/3.jpg",
-             "date": "May 2016",
-             "title": "A major stride for Alpha at the Expo Pack Mexico"
-         },
-         {
-            "id": '4',
-            "img": "img/news/416x300/4.jpg",
-            "date": "November 2015",
-            "title": "First Annual Meet"
-        }, {
-            "id": '5',
-            "img": "img/news/416x300/1.jpg",
-            "date": "October 2015",
-            "title": "Alpha enters North American market"
-        }, {
-            "id": '6',
-             "img":"img/news/416x300/5.jpg",
-            "date": "October 2015",
-            "title": "Alpha commissions Rajoo 3-Layer Multifold line"
-        },
-        {
-           "id": '3',
-           "img": "img/news/416x300/2.jpg",
-           "date": "February 2015",
-           "title": "Alpha Pharma Roorkee commissions ASB Nissei 12M machine"
-       }
+            {
+                "id": '2',
+                "img": "img/news/416x300/3.jpg",
+                "date": "May 2016",
+                "title": "A major stride for Alpha at the Expo Pack Mexico"
+            }, {
+                "id": '4',
+                "img": "img/news/416x300/4.jpg",
+                "date": "November 2015",
+                "title": "First Annual Meet"
+            }, {
+                "id": '5',
+                "img": "img/news/416x300/1.jpg",
+                "date": "October 2015",
+                "title": "Alpha enters North American market"
+            }, {
+                "id": '6',
+                "img": "img/news/416x300/5.jpg",
+                "date": "October 2015",
+                "title": "Alpha commissions Rajoo 3-Layer Multifold line"
+            }, {
+                "id": '3',
+                "img": "img/news/416x300/2.jpg",
+                "date": "February 2015",
+                "title": "Alpha Pharma Roorkee commissions ASB Nissei 12M machine"
+            }
 
 
 
-      ];
+        ];
     })
-    .controller('ContactCtrl', function($scope, TemplateService, NavigationService, $timeout,$uibModal,$http) {
+    .controller('ContactCtrl', function($scope, TemplateService, NavigationService, $timeout, $uibModal, $http) {
         $scope.template = TemplateService.changecontent("contact-us"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Contact Us"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
         $scope.tab = 1;
         $scope.enquiry = function() {
-         $uibModal.open({
-             animation: true,
-             templateUrl: "views/modal/enquiry.html",
-             scope: $scope,
-             windowClass: "mod-fix"
-         })
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/enquiry.html",
+                scope: $scope,
+                windowClass: "mod-fix"
+            })
 
-    };
+        };
 
 
-    $scope.contactus= {};
-    $scope.sendEmail= function(contactData){
-      console.log(contactData);
-      NavigationService.sendEnquiryEmail(contactData,function(data){
-        console.log(data);
-        $scope.enquiry();
-        $scope.contactus={};
-      })
-    }
+        $scope.contactus = {};
+        $scope.sendEmail = function(contactData) {
+            console.log(contactData);
+            NavigationService.sendEnquiryEmail(contactData, function(data) {
+                console.log(data);
+                  if (data.value) {
+                    $scope.complete=true;
+                    $scope.enquiry();
+                  $timeout(function() {
+                          $scope.complete=false;
+                      $scope.contactus = {};
+
+                  }, 2000);
+                }
+            })
+        }
 
     })
     .controller('FlexibleCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -220,39 +217,35 @@ $scope.secondTab = false;
         $scope.navigation = NavigationService.getnav();
 
 
-                $scope.certificate = [{
-                    image: "img/certificate/LD_Film-REACH.jpg",
-                    desc:"",
-                    link:"img/certificate/1.pdf"
-                }, {
-                    image: "img/certificate/LD_Film-ROHS.jpg",
-                    desc:"",
-                      link:"img/certificate/2.pdf"
-                }, {
-                    image: "img/certificate/PE-Migration.jpg",
-                    desc:"",
-                    link:"img/certificate/3.pdf"
-                },
-                {
-                    image: "img/certificate/POF-Migration.jpg",
-                    desc:"",
-                      link:"img/certificate/4.pdf"
-                },
-                {
-                    image: "img/certificate/POF-MSDS.jpg",
-                    desc:"",
-                      link:"img/certificate/5.pdf"
-                },
-                {
-                    image: "img/certificate/POF-REACH.jpg",
-                    desc:"",
-                      link:"img/certificate/6.pdf"
-                },
-                {
-                    image: "img/certificate/POF-ROHS.jpg",
-                    desc:"",
-                      link:"img/certificate/7.pdf"
-                }];
+        $scope.certificate = [{
+            image: "img/certificate/LD_Film-REACH.jpg",
+            desc: "",
+            link: "img/certificate/1.pdf"
+        }, {
+            image: "img/certificate/LD_Film-ROHS.jpg",
+            desc: "",
+            link: "img/certificate/2.pdf"
+        }, {
+            image: "img/certificate/PE-Migration.jpg",
+            desc: "",
+            link: "img/certificate/3.pdf"
+        }, {
+            image: "img/certificate/POF-Migration.jpg",
+            desc: "",
+            link: "img/certificate/4.pdf"
+        }, {
+            image: "img/certificate/POF-MSDS.jpg",
+            desc: "",
+            link: "img/certificate/5.pdf"
+        }, {
+            image: "img/certificate/POF-REACH.jpg",
+            desc: "",
+            link: "img/certificate/6.pdf"
+        }, {
+            image: "img/certificate/POF-ROHS.jpg",
+            desc: "",
+            link: "img/certificate/7.pdf"
+        }];
 
 
 
@@ -269,12 +262,12 @@ $scope.secondTab = false;
         $scope.menutitle = NavigationService.makeactive("News Detail"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-        $scope.stateId = $stateParams.id ;
-        NavigationService.getDetailNews($stateParams.id,function(data){
-          console.log("getDetailNews",data);
-          $scope.detailNews = data.data.data;
-          console.log("$scope.detailNews",$scope.detailNews);
-          $scope.relatedNewss =  $scope.detailNews.relatednews;
+        $scope.stateId = $stateParams.id;
+        NavigationService.getDetailNews($stateParams.id, function(data) {
+            console.log("getDetailNews", data);
+            $scope.detailNews = data.data.data;
+            console.log("$scope.detailNews", $scope.detailNews);
+            $scope.relatedNewss = $scope.detailNews.relatednews;
         })
 
         switch ($stateParams.id) {
@@ -310,110 +303,103 @@ $scope.secondTab = false;
                 break;
             case '4':
                 $scope.newDetailss = {
-                  "img": "img/news/1027x553/4.jpg",
-                  "title": "First Annual Meet",
-                  "date": "November 9-10, 2015",
-                  "desc": "Alpha Plastomers held its first annual meet right before Diwali. During the two days, everything from cost control to business strategies was discussed."
+                    "img": "img/news/1027x553/4.jpg",
+                    "title": "First Annual Meet",
+                    "date": "November 9-10, 2015",
+                    "desc": "Alpha Plastomers held its first annual meet right before Diwali. During the two days, everything from cost control to business strategies was discussed."
                 }
 
                 break;
             case '5':
                 $scope.newDetailss = {
-                  "img": "img/news/1027x553/1.jpg",
-                  "title": "Alpha enters North American market",
-                  "date": "October 2015",
-                  "desc": "Alpha is delighted to announce its presence in USA. A very relieved Akshay Agarwal, Director of Alpha Plastomers, said “After months of back-and-forth and negotiations, we were able to come to an agreement with our USA counterparts allowing us to move closer to our customers and allowing our customers to reduce inventory and transit days."
+                    "img": "img/news/1027x553/1.jpg",
+                    "title": "Alpha enters North American market",
+                    "date": "October 2015",
+                    "desc": "Alpha is delighted to announce its presence in USA. A very relieved Akshay Agarwal, Director of Alpha Plastomers, said “After months of back-and-forth and negotiations, we were able to come to an agreement with our USA counterparts allowing us to move closer to our customers and allowing our customers to reduce inventory and transit days."
                 }
 
                 break;
             case '6':
                 $scope.newDetailss = {
-                  "img": "img/news/1027x553/5.jpg",
-                  "title": "Alpha commissions Rajoo 3-Layer Multifold line",
-                  "date": "October 2015",
-                  "desc": "Over the past 27 years, Alpha has shown that it is not afraid to add new products to its portfolio to stay as one of the leading packaging suppliers in India. With the addition of a 3-layer blown film line, Alpha has moved the goal post yet again and is perfectly poised to become a true “global corporation”. With Rajoo’s 3-Layer Multifold line, Alpha will be adding Collation Shrink Film (also known as LD shrink film), stretch film, and “milk pouch” film.",
-                  "desc2": "Please contact your sales representative to learn more about Alpha’s new product offerings."
+                    "img": "img/news/1027x553/5.jpg",
+                    "title": "Alpha commissions Rajoo 3-Layer Multifold line",
+                    "date": "October 2015",
+                    "desc": "Over the past 27 years, Alpha has shown that it is not afraid to add new products to its portfolio to stay as one of the leading packaging suppliers in India. With the addition of a 3-layer blown film line, Alpha has moved the goal post yet again and is perfectly poised to become a true “global corporation”. With Rajoo’s 3-Layer Multifold line, Alpha will be adding Collation Shrink Film (also known as LD shrink film), stretch film, and “milk pouch” film.",
+                    "desc2": "Please contact your sales representative to learn more about Alpha’s new product offerings."
                 }
 
                 break;
-                case '7':
-                    $scope.newDetailss = {
-                      "img": "img/news/81.jpg",
-                      "title": "POF Shrink Films - A must for the Indian market",
-                      "date": "October 2015",
-                      "desc": "Wastage of fruits and vegetables are a real concern for a country like India where not only do we have to feed an ever growing population but also because over 16% of GDP is dependent on agriculture.",
-                      "desc2": "Packaging of food has evolved drastically over the last 15 years with introduction of cling film, shrink film, multi-layered barrier films (which started as 3 or 5 layers and now are crossing 11 layers). With all the innovation globally, not all of it has found success in India due to poor supply chain, lack of infrastructure, and above all, small organized retail market. Not all is gloom and doom though as the changes in government policies and tax structures will allow developments to pick up pace.",
-                      "desc3": "We, at Alpha, asked ourselves, how can we add value for brand owners to differentiate their products. The result was development of POF Shrink Film, specially designed to withstand extreme temperatures to protect the product inside.",
-                      "desc4": "This new range of Safe & Secure Shrink Film protects the product from pilferage and dust in transit so that the product reaches its destination unharmed and unaltered. Once it reaches its destination, the product can be easily differentiated from the competition due to its clarity, neatness, and shine. Due to its “anti-fog” technology, even at sub-0 degree temperature, the product is easily visible without any sign of water droplets on the film.",
-                      "desc5": "This range of Safe & Secure film is a result of over one year of development as we looked at shrinkage, holding force, and anti-fog properties just right. Alpha becomes the first to offer such film in India and having already tied up with a few brand-owners, this range of Shrink Film is a drastic improvement over other packaging methods such as PVC shrink film (gives off high odor) and cling film (not pilferage proof)."
-                    }
+            case '7':
+                $scope.newDetailss = {
+                    "img": "img/news/81.jpg",
+                    "title": "POF Shrink Films - A must for the Indian market",
+                    "date": "October 2015",
+                    "desc": "Wastage of fruits and vegetables are a real concern for a country like India where not only do we have to feed an ever growing population but also because over 16% of GDP is dependent on agriculture.",
+                    "desc2": "Packaging of food has evolved drastically over the last 15 years with introduction of cling film, shrink film, multi-layered barrier films (which started as 3 or 5 layers and now are crossing 11 layers). With all the innovation globally, not all of it has found success in India due to poor supply chain, lack of infrastructure, and above all, small organized retail market. Not all is gloom and doom though as the changes in government policies and tax structures will allow developments to pick up pace.",
+                    "desc3": "We, at Alpha, asked ourselves, how can we add value for brand owners to differentiate their products. The result was development of POF Shrink Film, specially designed to withstand extreme temperatures to protect the product inside.",
+                    "desc4": "This new range of Safe & Secure Shrink Film protects the product from pilferage and dust in transit so that the product reaches its destination unharmed and unaltered. Once it reaches its destination, the product can be easily differentiated from the competition due to its clarity, neatness, and shine. Due to its “anti-fog” technology, even at sub-0 degree temperature, the product is easily visible without any sign of water droplets on the film.",
+                    "desc5": "This range of Safe & Secure film is a result of over one year of development as we looked at shrinkage, holding force, and anti-fog properties just right. Alpha becomes the first to offer such film in India and having already tied up with a few brand-owners, this range of Shrink Film is a drastic improvement over other packaging methods such as PVC shrink film (gives off high odor) and cling film (not pilferage proof)."
+                }
 
-                    break;
-                case '8':
-                    $scope.newDetailss = {
-                      "img": "img/news/1027x553/6.jpg",
-                      "title": "Packaging Trends in 2017",
-                      "date": "January 2017",
-                      "desc": "India ended 2016 with a bang, with the government banning old high-value currency notes to curb black economy. The knock-on effect of that was a sudden slowdown in demand across all industries as the common man struggled to make ends meet due to limited availability of cash. It has been over two months since the shock move by the Modi government and it looks like the market is returning to ‘business-as-usual’. Although, every businessman knows that ‘business-as-usual’ doesn’t quite mean the same as it used to before November 8, 2016.",
-                      "desc2": "Over last few years, we have seen Indian packaging growth and development lean towards flexible packaging primarily due to limited shelf space in Indian houses. With various other advantages that flexible packaging offers over rigid packaging, such as better brand appeal, barrier properties and many more, the pace of development and quality has improved tremendously and at Alpha, we are playing our part by increasing our capacity and product offerings.",
-                      "desc3": "We launched the Mulch film in the beginning of 2017 and throughout the year, will look to increase awareness of such film in agricultural applications. India is an agriculture-based economy and we felt the need to add value to this industry. With this product Alpha has added a 'non-packaging' product to our portfolio, for the first time. The mulch film can increase crop yield by up to 33%.",
-                      "desc4": "As the Modi government introduced slew of reforms over next year, including the introduction of GST, and with the Indian packaging industry showing double-digit growth we have put in place our own expansion plans. Much of Alpha’s focus will be on POF shrink film and Mulch film as it looks to increase production capacity for both films this year.",
-                      "desc5": "At Alpha, we are as optimistic as ever about the Indian Growth Story and within that, the packaging industry. It is well known within the industry that packaging consumption per capita in India is 4 times less than China and about 10 times less than USA. With the Indian packaging industry pegged to grow from US$ 35 billion to US$73 billion by 2020, there is no other place Alpha would rather be."
-                    }
+                break;
+            case '8':
+                $scope.newDetailss = {
+                    "img": "img/news/1027x553/6.jpg",
+                    "title": "Packaging Trends in 2017",
+                    "date": "January 2017",
+                    "desc": "India ended 2016 with a bang, with the government banning old high-value currency notes to curb black economy. The knock-on effect of that was a sudden slowdown in demand across all industries as the common man struggled to make ends meet due to limited availability of cash. It has been over two months since the shock move by the Modi government and it looks like the market is returning to ‘business-as-usual’. Although, every businessman knows that ‘business-as-usual’ doesn’t quite mean the same as it used to before November 8, 2016.",
+                    "desc2": "Over last few years, we have seen Indian packaging growth and development lean towards flexible packaging primarily due to limited shelf space in Indian houses. With various other advantages that flexible packaging offers over rigid packaging, such as better brand appeal, barrier properties and many more, the pace of development and quality has improved tremendously and at Alpha, we are playing our part by increasing our capacity and product offerings.",
+                    "desc3": "We launched the Mulch film in the beginning of 2017 and throughout the year, will look to increase awareness of such film in agricultural applications. India is an agriculture-based economy and we felt the need to add value to this industry. With this product Alpha has added a 'non-packaging' product to our portfolio, for the first time. The mulch film can increase crop yield by up to 33%.",
+                    "desc4": "As the Modi government introduced slew of reforms over next year, including the introduction of GST, and with the Indian packaging industry showing double-digit growth we have put in place our own expansion plans. Much of Alpha’s focus will be on POF shrink film and Mulch film as it looks to increase production capacity for both films this year.",
+                    "desc5": "At Alpha, we are as optimistic as ever about the Indian Growth Story and within that, the packaging industry. It is well known within the industry that packaging consumption per capita in India is 4 times less than China and about 10 times less than USA. With the Indian packaging industry pegged to grow from US$ 35 billion to US$73 billion by 2020, there is no other place Alpha would rather be."
+                }
 
             default:
 
         }
 
 
-        $scope.relatedNews =[
-          {
-            "id":"1",
-            "title":"Meet Alpha’s Plastic Super Family in Mexico! ",
-            "image":"img/news/1.jpg"
+        $scope.relatedNews = [{
+            "id": "1",
+            "title": "Meet Alpha’s Plastic Super Family in Mexico! ",
+            "image": "img/news/1.jpg"
 
-          },
-          {
-            "id":"2",
-            "title":"A major stride for Alpha at the Expo Pack Mexico",
-            "image":"img/news/417x258/3.jpg"
+        }, {
+            "id": "2",
+            "title": "A major stride for Alpha at the Expo Pack Mexico",
+            "image": "img/news/417x258/3.jpg"
 
-          },
-          {
-            "id":"3",
-            "title":"Alpha Pharma Roorkee commissions ASB...",
-            "image":"img/news/417x258/2.jpg"
+        }, {
+            "id": "3",
+            "title": "Alpha Pharma Roorkee commissions ASB...",
+            "image": "img/news/417x258/2.jpg"
 
-          },
-          {
-            "id":"4",
-            "title":"First Annual Meet",
-            "image":"img/news/417x258/4.jpg"
+        }, {
+            "id": "4",
+            "title": "First Annual Meet",
+            "image": "img/news/417x258/4.jpg"
 
-          },      {
-                  "id":"5",
-                  "title":"Alpha enters North American market",
-                  "image":"img/news/417x258/1.jpg"
+        }, {
+            "id": "5",
+            "title": "Alpha enters North American market",
+            "image": "img/news/417x258/1.jpg"
 
-                },
-                {
-                    "id":"6",
-                    "title":"Alpha commissions Rajoo 3-Layer Multifold line",
-                    "image":"img/news/417x258/5.jpg"
+        }, {
+            "id": "6",
+            "title": "Alpha commissions Rajoo 3-Layer Multifold line",
+            "image": "img/news/417x258/5.jpg"
 
-                  },
-                  {
-                      "id":"7",
-                      "title":"POF Shrink Films - A must for the Indian market",
-                      "image":"img/news/81.jpg"
+        }, {
+            "id": "7",
+            "title": "POF Shrink Films - A must for the Indian market",
+            "image": "img/news/81.jpg"
 
-                    },
-                    {
-                        "id":"8",
-                        "title":"Packaging Trends in 2017",
-                        "image":"img/news/417x258/6.jpg"
+        }, {
+            "id": "8",
+            "title": "Packaging Trends in 2017",
+            "image": "img/news/417x258/6.jpg"
 
-                      }]
+        }]
 
         $scope.newsdetail = [{
             "img": "",
@@ -464,42 +450,37 @@ $scope.secondTab = false;
         $scope.navigation = NavigationService.getnav();
 
     })
-    .controller('CareersCtrl', function($scope, TemplateService, NavigationService, $timeout,$uibModal,$state) {
+    .controller('CareersCtrl', function($scope, TemplateService, NavigationService, $timeout, $uibModal, $state) {
         $scope.template = TemplateService.changecontent("careers"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Careers"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-        $scope.careersack = function () {
+        $scope.careersack = function() {
             // $state.reload();
-             carrerMod=$uibModal.open({
-                 animation: true,
-                 templateUrl: "views/modal/careersack.html",
-                 scope: $scope,
-                 windowClass: "mod-fix"
-             })
-             setTimeout(function(){
-               carrerMod.close();
-              $state.reload();
-             },3000);
+            carrerMod = $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/careersack.html",
+                scope: $scope,
+                windowClass: "mod-fix"
+            })
 
-         };
+        };
+  $scope.complete=false;
+    $scope.careerData = {};
+        $scope.sendCareer = function(contactData) {
+          NavigationService.sendCareerEmail(contactData, function(data) {
+                    console.log("career", data);
+                    if (data.value) {
+                        $scope.complete=true;
+                          $scope.careersack();
+                      $timeout(function() {
+                              $scope.complete=false;
+                          $scope.careerData = {};
 
-         $scope.sendCareer = function (contactData) {
-             var flag = true;
-
-             console.log("DATA", contactData);
-             console.log("FLAG", flag);
-             if (flag) {
-
-                 NavigationService.sendCareerEmail(contactData, function (data) {
-                     console.log("career", data);
-                     $scope.careerData = {};
-
-                     $scope.careersack();
-                 });
-             }
-
- };
+                      }, 2000);
+                    }
+                  });
+                };
 
     })
     .controller('NewsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -507,9 +488,9 @@ $scope.secondTab = false;
         $scope.menutitle = NavigationService.makeactive("News"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-        NavigationService.getLatestNews(function(data){
-        $scope.latestNews=data.data.data.results;
-        console.log("  $scope.latestNews",  $scope.latestNews);
+        NavigationService.getLatestNews(function(data) {
+            $scope.latestNews = data.data.data.results;
+            console.log("  $scope.latestNews", $scope.latestNews);
         });
 
     })
@@ -518,10 +499,18 @@ $scope.secondTab = false;
         $scope.menutitle = NavigationService.makeactive("Journey"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-        NavigationService.getJourney(function(data){
-        $scope.journey=data.data.data.results;
-        console.log("$scope.journey",$scope.journey);
-        })
+
+        NavigationService.getJourney(function(data) {
+            $scope.journey = data.data.data.results;
+            console.log("$scope.journey", $scope.journey);
+            for (var i = 0; i < $scope.journey.length; i++) {
+                if ((i + 2) % 2 == 0) {
+                  $scope.journey[i].side="right";
+                } else {
+                  $scope.journey[i].side="left";
+                }
+            }
+          })
 
     })
     .controller('CertificationsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -531,38 +520,49 @@ $scope.secondTab = false;
         $scope.navigation = NavigationService.getnav();
 
     })
-    .controller('Bags-LinersCtrl', function($scope, TemplateService, NavigationService, $timeout,$uibModal,$http) {
+    .controller('Bags-LinersCtrl', function($scope, TemplateService, NavigationService, $timeout, $uibModal, $http) {
         $scope.template = TemplateService.changecontent("bags-liners"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Bags-Liners"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-       $scope.bagcontactus= {};
+        $scope.bagcontactus = {};
         $scope.enquiry = function() {
-         $uibModal.open({
-             animation: true,
-             templateUrl: "views/modal/enquiry.html",
-             scope: $scope,
-             windowClass: "mod-fix"
-         });
-       };
-       NavigationService.getProducts(function(data){
-         console.log("data",data);
-         $scope.bagsLiners=data.data.data.results;
-         console.log($scope.bagsLiners,"$scope.bagsLiners");
-         $scope.gallery=$scope.bagsLiners[0].gallery;
-         $scope.testimonials=$scope.bagsLiners[0].testimonial;
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/enquiry.html",
+                scope: $scope,
+                windowClass: "mod-fix"
+            });
+        };
+        NavigationService.getProducts(function(data) {
+            console.log("data", data);
+            $scope.bagsLiners = data.data.data.results;
+            console.log($scope.bagsLiners, "$scope.bagsLiners");
+            $scope.gallery = $scope.bagsLiners[0].gallery;
+            $scope.testimonials = $scope.bagsLiners[0].testimonial;
 
-       })
+        })
 
-    $scope.bagcontactus= {};
- $scope.sendEmail= function(contactData){
-   console.log(contactData);
-   NavigationService.sendEnquiryEmail(contactData,function(data){
-     console.log(data);
-     $scope.enquiry();
-     $scope.contactus={};
-   })
- };
+        $scope.bagcontactus = {};
+        $scope.complete=false;
+        $scope.sendEmail = function(contactData) {
+            console.log(contactData);
+            NavigationService.sendEnquiryEmail(contactData, function(data) {
+                console.log(data);
+                if (data.value) {
+                    $scope.complete=true;
+                    $scope.enquiry();
+
+                    $timeout(function() {
+                        // $scope.contactus = {};
+                        $scope.bagcontactus = {};
+                          $scope.complete=false;
+                    }, 2000);
+                }
+
+
+            })
+        };
 
         $scope.imageslider = [{
             image: "img/ppe/Big/1.jpg"
@@ -570,22 +570,17 @@ $scope.secondTab = false;
             image: "img/ppe/Big/2.jpg"
         }, {
             image: "img/ppe/Big/3.jpg"
-        },
-        {
+        }, {
             image: "img/ppe/Big/4.jpg"
-        },
-        {
+        }, {
             image: "img/ppe/Big/5.jpg"
-        },
-        {
+        }, {
             image: "img/ppe/Big/6.jpg"
-        },
-        {
+        }, {
             image: "img/ppe/Big/7.jpg"
-        },
-        {
+        }, {
             image: "img/ppe/Big/8.jpg"
-        } ];
+        }];
 
         $scope.imagethumb = [{
             image: "img/ppe/Thumbnails/1.jpg"
@@ -595,13 +590,13 @@ $scope.secondTab = false;
             image: "img/ppe/Thumbnails/3.jpg"
         }, {
             image: "img/ppe/Thumbnails/4.jpg"
-        },{
+        }, {
             image: "img/ppe/Thumbnails/5.jpg"
-        },{
+        }, {
             image: "img/ppe/Thumbnails/6.jpg"
-        },{
+        }, {
             image: "img/ppe/Thumbnails/7.jpg"
-        },{
+        }, {
             image: "img/ppe/Thumbnails/8.jpg"
         }];
 
@@ -616,42 +611,52 @@ $scope.secondTab = false;
 
     })
 
-.controller('Speciality-FilmCtrl', function($scope, TemplateService, NavigationService, $timeout,$uibModal) {
+.controller('Speciality-FilmCtrl', function($scope, TemplateService, NavigationService, $timeout, $uibModal) {
     $scope.template = TemplateService.changecontent("speciality-film"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Speciality-Film"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 
     $scope.enquiry = function() {
-     $uibModal.open({
-         animation: true,
-         templateUrl: "views/modal/enquiry.html",
-         scope: $scope,
-         windowClass: "mod-fix"
-     })
-   };
-   NavigationService.getSpecialityFilms(function(data){
-     console.log("data",data);
-     $scope.specialityFilms =data.data.data.results;
-   });
-   NavigationService.getCollation(function(data){
-     console.log(data,"data");
-     $scope.collations=data.data.data.results;
-     console.log("$scope.collations",$scope.collations);
-   });
-   NavigationService.getAgricultural(function(data){
-     console.log("data",data);
-     $scope.agricultural =data.data.data.results;
-   })
-$scope.contactus= {};
-$scope.sendEmail= function(contactData){
-  console.log(contactData);
-  NavigationService.sendEnquiryEmail(contactData,function(data){
-    console.log(data);
-    $scope.enquiry();
-    $scope.contactus={};
-  })
-}
+        $uibModal.open({
+            animation: true,
+            templateUrl: "views/modal/enquiry.html",
+            scope: $scope,
+            windowClass: "mod-fix"
+        })
+    };
+    NavigationService.getSpecialityFilms(function(data) {
+        console.log("data", data);
+        $scope.specialityFilms = data.data.data.results;
+    });
+    NavigationService.getCollation(function(data) {
+        console.log(data, "data");
+        $scope.collations = data.data.data.results;
+        console.log("$scope.collations", $scope.collations);
+    });
+    NavigationService.getAgricultural(function(data) {
+        console.log("data", data);
+        $scope.agricultural = data.data.data.results;
+    })
+    $scope.contactus = {};
+      $scope.complete=false;
+    $scope.sendEmail = function(contactData) {
+        console.log(contactData);
+        NavigationService.sendEnquiryEmail(contactData, function(data) {
+            console.log(data);
+            if (data.value) {
+              $scope.complete=true;
+                  $scope.enquiry();
+              $timeout(function() {
+                  // $scope.contactus = {};
+                $scope.contactus = {};
+                    $scope.complete=false;
+              }, 2000);
+            }
+
+
+        })
+    }
 
     $scope.tab = 1;
 
@@ -703,9 +708,9 @@ $scope.sendEmail= function(contactData){
     $scope.imagethumb2 = [{
         image: "img/films/slider2/Thumbnails/1.jpg"
     }, {
-      image: "img/films/slider2/Thumbnails/2.jpg"
+        image: "img/films/slider2/Thumbnails/2.jpg"
     }, {
-      image: "img/films/slider2/Thumbnails/3.jpg"
+        image: "img/films/slider2/Thumbnails/3.jpg"
     }, {
         image: "img/films/slider2/Thumbnails/4.jpg"
     }, {
@@ -734,36 +739,48 @@ $scope.sendEmail= function(contactData){
 
 })
 
-.controller('PofShrinkFilmCtrl', function($scope, TemplateService, NavigationService, $timeout,$uibModal,$http) {
+.controller('PofShrinkFilmCtrl', function($scope, TemplateService, NavigationService, $timeout, $uibModal, $http) {
         $scope.template = TemplateService.changecontent("pof"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Pof Shrink Film"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
 
         $scope.enquiry = function() {
-         $uibModal.open({
-             animation: true,
-             templateUrl: "views/modal/enquiry.html",
-             scope: $scope,
-             windowClass: "mod-fix"
-         });
-       };
-       NavigationService.getShrinkFilm(function(data){
-         console.log("data",data);
-         $scope.shrinkFilms=data.data.data.results;
-         console.log("$scope.shrinkFilms",$scope.shrinkFilms);
-         $scope.gallery=$scope.shrinkFilms[0].gallery;
-         $scope.testimonial=$scope.shrinkFilms[0].testimonial;
-       })
-     console.log("POF");   $scope.contactus= {};
- $scope.sendEmail= function(contactData){
-   console.log(contactData);
-   NavigationService.sendEnquiryEmail(contactData,function(data){
-     console.log(data);
-     $scope.enquiry();
-     $scope.contactus={};
-   })
- };
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/enquiry.html",
+                scope: $scope,
+                windowClass: "mod-fix"
+            });
+        };
+        NavigationService.getShrinkFilm(function(data) {
+            console.log("data", data);
+            $scope.shrinkFilms = data.data.data.results;
+            console.log("$scope.shrinkFilms", $scope.shrinkFilms);
+            $scope.gallery = $scope.shrinkFilms[0].gallery;
+            $scope.testimonial = $scope.shrinkFilms[0].testimonial;
+        })
+        console.log("POF");
+        $scope.contactus = {};
+          $scope.complete=false;
+        $scope.sendEmail = function(contactData) {
+            console.log(contactData);
+            NavigationService.sendEnquiryEmail(contactData, function(data) {
+                console.log(data);
+                if (data.value) {
+                    $scope.complete=true;
+                      $scope.enquiry();
+                  $timeout(function() {
+                      // $scope.contactus = {};
+                    $scope.contactus = {};
+                        $scope.complete=false;
+                  }, 2000);
+                }
+
+
+
+            })
+        };
         $scope.flexapplication = [{
             image: "img/pof/6.png",
             desc: "Pharmaceuticals"
@@ -821,46 +838,57 @@ $scope.sendEmail= function(contactData){
         }];
         angular.module('ui.bootstrap.demo', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
 
-          $scope.rate1 = 1;
-          $scope.rate2 = 2;
-          $scope.rate3 = 3;
-          $scope.rate4 = 4;
-          $scope.rate5 = 5;
-          $scope.max = 5;
-          $scope.isReadonly = true;
+        $scope.rate1 = 1;
+        $scope.rate2 = 2;
+        $scope.rate3 = 3;
+        $scope.rate4 = 4;
+        $scope.rate5 = 5;
+        $scope.max = 5;
+        $scope.isReadonly = true;
 
 
     })
-    .controller('PetBottlesCtrl', function($scope, TemplateService, NavigationService, $timeout,$uibModal,$http) {
+    .controller('PetBottlesCtrl', function($scope, TemplateService, NavigationService, $timeout, $uibModal, $http) {
         $scope.template = TemplateService.changecontent("pet"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("PET Bottles"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
 
         $scope.enquiry = function() {
-         $uibModal.open({
-             animation: true,
-             templateUrl: "views/modal/enquiry.html",
-             scope: $scope,
-             windowClass: "mod-fix"
-         })};
-         NavigationService.getBottles(function(data){
-           console.log("data",data);
-           $scope.petBottles=data.data.data.results;
-           console.log("$scope.petBottles",$scope.petBottles);
-           $scope.gallery=$scope.petBottles[0].gallery;
-           console.log( $scope.gallery," $scope.gallery");
-           $scope.testimonial=$scope.petBottles[0].testimonial;
-         })
- $scope.contactus= {};
- $scope.sendEmail= function(contactData){
-   console.log(contactData);
-   NavigationService.sendEnquiryEmail(contactData,function(data){
-     console.log(data);
-     $scope.enquiry();
-     $scope.contactus={};
-   })
- }
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/enquiry.html",
+                scope: $scope,
+                windowClass: "mod-fix"
+            })
+        };
+        NavigationService.getBottles(function(data) {
+            console.log("data", data);
+            $scope.petBottles = data.data.data.results;
+            console.log("$scope.petBottles", $scope.petBottles);
+            $scope.gallery = $scope.petBottles[0].gallery;
+            console.log($scope.gallery, " $scope.gallery");
+            $scope.testimonial = $scope.petBottles[0].testimonial;
+        })
+        $scope.contactus = {};
+          $scope.complete=false;
+        $scope.sendEmail = function(contactData) {
+            console.log(contactData);
+            NavigationService.sendEnquiryEmail(contactData, function(data) {
+                console.log(data);
+                  if (data.value) {
+                    $scope.complete=true;
+                      $scope.enquiry();
+                  $timeout(function() {
+                      // $scope.contactus = {};
+                    $scope.contactus = {};
+                        $scope.complete=false;
+                  }, 2000);
+                }
+
+
+            })
+        }
         $scope.imageslider = [{
             image: "img/PET/1slide.jpg"
         }, {
