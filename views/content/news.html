@@ -36,7 +36,7 @@
                           </div>
                       </div>
                       <h4 ng-bind-html="data.name">Packaging Trends in 2017</h4>
-                      <p ng-bind-html="data.content">India ended 2016 with a bang, with the government banning old high-value currency notes to curb black economy. The knock-on effect of that was a sudden slowdown in demand across all industries as the common man struggled to make ends meet due to limited availability of cash. It has been over two months since the shock move by the Modi government and it looks like the market is returning to ‘business-as-usual’.
+                      <p ng-bind-html="data.content | limitTo:500">
                       </p>
                       <button type="button" class="btn btn-default" ui-sref="news-detail({id:data._id})">Read more</button>
                       <!-- <button type="button" class="btn btn-default" ui-sref="news-detail({id:'8'})">Read more</button> -->

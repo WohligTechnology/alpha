@@ -11,7 +11,7 @@
         <div class="nw-detail">
           <div class="al-relative">
           <img ng-src="{{detailNews.innerpageimage | uploadpath}}" alt="" class="img-responsive">
-          <div class="date-sec">
+          <div class="date-sec" ng-if="detailNews.date">
             <span>{{detailNews.date | date :'MMMM y'}}</span>
             <!-- <span>September 2016</span> -->
           </div>
