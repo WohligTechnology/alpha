@@ -1763,6 +1763,37 @@ upload-image {
   }
 }
 
+.display-inline.jr2-img:before {
+    content: '';
+    position: absolute;
+    top: 53%;
+    left: -41px;
+    width: 42px;
+    height: 2px;
+    background: #e21e23;
+  }
+  .display-inline.jr2-img:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -42px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #e21e23;
+    background: #e21e23;
+    border-radius: 100%;
+}
+.display-inline.jr2-img{
+  border: 1px solid #e21e23;
+  padding: 5px;
+  width: 225px;
+  height: auto;
+}
+
+
+img{
+  width:100%;
+}
 
 @import "sagar";
 @import "rishub"; // @import "fancybox-override";
