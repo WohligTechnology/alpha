@@ -1788,12 +1788,15 @@ upload-image {
   padding: 5px;
   width: 225px;
   height: auto;
+  img{
+    width:100%;
+  }
 }
 
 
-img{
-  width:100%;
-}
+
+
+
 
 @import "sagar";
 @import "rishub"; // @import "fancybox-override";

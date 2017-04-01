@@ -35,8 +35,8 @@
                               <span>{{data.date |date :'MMMM y'}}</span>
                           </div>
                       </div>
-                      <h4 ng-bind-html="data.name">Packaging Trends in 2017</h4>
-                      <p ng-bind-html="data.content | limitTo:500">
+                      <h4 class="hideHead" ng-bind-html="data.name | shorten :45">Packaging Trends in 2017</h4>
+                      <p class="hideData" ng-bind-html="data.content | limitTo:250">
                       </p>
                       <button type="button" class="btn btn-default" ui-sref="news-detail({id:data._id})">Read more</button>
                       <!-- <button type="button" class="btn btn-default" ui-sref="news-detail({id:'8'})">Read more</button> -->

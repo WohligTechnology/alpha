@@ -150,6 +150,7 @@
 
 .news-sec {
   padding-bottom: 15px;
+      height: 480px; 
     h4 {
         color: $brand-danger;
         font-weight: 400;
@@ -166,7 +167,14 @@
         font-family: 'roboto';
         font-weight: 300;
     }
-
+    // .hideHead{
+    //   height:40px;
+    //   overflow: hidden;
+    // }
+    // .hideData{
+    //   height:72px;
+    //   overflow:hidden;
+    // }
     .btn-default {
         border: 2px solid $brand-danger;
         color: $brand-danger;

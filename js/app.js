@@ -237,6 +237,18 @@ firstapp.directive('imageonload', function() {
         }
     };
 });
+firstapp.filter('shorten', function() {
+    return function(value, limit) {
+        if (value)
+            if (value.length < limit) {
+                return value;
+            } else {
+                return value.slice(0, limit) + "...";
+
+            }
+
+    }
+});
 
 
 // firstapp.directive('uploadImage', function ($http, $filter) {
