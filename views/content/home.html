@@ -145,7 +145,7 @@
           <h1 class="text-up color-red margin0 font-revelution ">journey</h1>
         </div>
         <div class="pt90">
-          <div class="col-md-4" ng-repeat="data in journey | limitTo:3">
+          <div class="col-md-4" ng-repeat="data in journey |orderBy:'-date' |limitTo:3 ">
             <div class="j2" >
               <div class="jr2-text display-inline">
                 <h4 class="color-red year-r font-norica">{{data.date | date :'yyyy'}}</h4>
