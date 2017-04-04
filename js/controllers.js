@@ -270,178 +270,178 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             console.log("$scope.detailNews", $scope.detailNews);
             $scope.relatedNewss = $scope.detailNews.relatednews;
         })
-
-        switch ($stateParams.id) {
-            case '1':
-                $scope.newDetailss = {
-                    "img": "img/news/1.jpg",
-                    "title": "Meet Alpha’s Plastic Super Family in Mexico! ",
-                    "date": "September 2016",
-                    "desc": "The packaging industry as a whole is very boring. Because it is predominantly in the B2B sector, the scope for experimenting is less. Majority of the companies have named their products based on their scientific qualities, which makes them difficult to remember. Only people from within the industry get the hang of it over a period of time.",
-                    "desc2": "But, ALPHA has always believed in ‘Adding Value’ to the customers and the society at large. Why does this industry necessarily have to be boring? Why follow the same uninteresting naming convention? We decided to break the routine and do something interesting. Products will stimulate more curiosity if we add a face to them instead of giving them names based on their scientific properties. In order to differentiate Alpha from the rest, we created the Plastic Super Family, which is more relatable and spot-on entertaining. Each of the products have few distinct super powers, by which we mean the properties of Plastic, that represents a particular superhero and together they form the Plastic Super Family. PSF has 4 members - a father, mother, teenage son and an elder daughter.",
-                    "desc3": "The father, Mr. Protecto represents Safe & Secure shrink film that secures the content inside the packaging from dust and moisture. He provides security. Similarly, the mother of PSF is the face of our Stretch Films. With her ability to stretch, she safeguards goods from damage during transportation. Pet bottles & jars are represented by Petty, the feather light daughter and the collation shrink film is characterized by Tuff, whose strength is his USP and his cape portrays its ability to get printed for branding.",
-                    "desc4": "We are very excited to present our Plastic Super Family at the Pack Expo 2016 in Mexico. They are fun, entertaining and definitely the forerunners in their categories."
-                }
-                break;
-            case '2':
-                $scope.newDetailss = {
-                    "img": "img/news/1027x553/3.jpg",
-                    "title": "A major stride for Alpha at the Expo Pack Mexico ",
-                    "date": "May 17 2016",
-                    "desc": "Alpha Plastomers is participating in Expo Pack – a 4-day event being held in Santa Fe in Mexico City, Mexico from 17th to 20th May, 2016. International exhibitors in the packaging industry will present the latest machinery, materials, components, containers, and proven solutions for the processing, packaging, storage and distribution of products. Participating companies offer possibilities of new business opportunities, which is the main objective of the event. Alpha wishes to increase its presence globally and carve its name on the global map of the packaging industry. It will be an ideal platform for Alpha to showcase its products and distinguish them from their competitors.",
-                    "desc2": "Alpha Plastomers is a family-owned packaging solutions provider with over 25 years of experience. In 1996, Alpha Polymer (the name then) was offering not only PPTQ, but also Polyethylene (PE) bags and liners to industries including, but not limited to, textile, stationary and household goods. By 2004, Alpha Group processed about 2,000 MT of polymers every month, which made it the largest PPTQ converter in Asia. The Indian packaging sector is ever-evolving and with Alpha’s leading position in the market in every sector, in 2006, Polyolefin (POF) Shrink Film and PET preforms were added to its portfolio. The Alpha Group has become one of India’s top packaging solution provider for the primary and secondary packaging industry with a capacity of over seven million preforms per day and over 3,500 MT of POF shrink film annually. This tremendous growth allowed Alpha Group to diversify and add PET bottles to its portfolio for rigid packaging. The Alpha Group is the only Indian company that provides solution for flexible and rigid packaging.",
-                    "desc3": "The Expo Pack Mexico will play abode to some of the world renowned players in the packaging industry around for a period of 4 days. The exhibition will be spread over total floor space of 204,500 sq. ft. and is expected to have over 25,000 visitors with 1,000 exhibitors. It’s going to be an exciting time for Alpha and the packaging industry as a whole!"
-                }
-                break;
-            case '3':
-                $scope.newDetailss = {
-                    "img": "img/news/1027x553/2.jpg",
-                    "title": "Alpha Pharma Roorkee commissions ASB Nissei 12M machine",
-                    "date": "February 2016",
-                    "desc": "Alpha cements its presence in the Rigid Packaging industry by adding ASB Nissei 12M to allow greater flexibility in its product offerings. With the new addition, Alpha has taken its first step in what will be a steady increase in capacity to tailor to Pharmaceutical and FMCG industries."
-                }
-
-                break;
-            case '4':
-                $scope.newDetailss = {
-                    "img": "img/news/1027x553/4.jpg",
-                    "title": "First Annual Meet",
-                    "date": "November 9-10, 2015",
-                    "desc": "Alpha Plastomers held its first annual meet right before Diwali. During the two days, everything from cost control to business strategies was discussed."
-                }
-
-                break;
-            case '5':
-                $scope.newDetailss = {
-                    "img": "img/news/1027x553/1.jpg",
-                    "title": "Alpha enters North American market",
-                    "date": "October 2015",
-                    "desc": "Alpha is delighted to announce its presence in USA. A very relieved Akshay Agarwal, Director of Alpha Plastomers, said “After months of back-and-forth and negotiations, we were able to come to an agreement with our USA counterparts allowing us to move closer to our customers and allowing our customers to reduce inventory and transit days."
-                }
-
-                break;
-            case '6':
-                $scope.newDetailss = {
-                    "img": "img/news/1027x553/5.jpg",
-                    "title": "Alpha commissions Rajoo 3-Layer Multifold line",
-                    "date": "October 2015",
-                    "desc": "Over the past 27 years, Alpha has shown that it is not afraid to add new products to its portfolio to stay as one of the leading packaging suppliers in India. With the addition of a 3-layer blown film line, Alpha has moved the goal post yet again and is perfectly poised to become a true “global corporation”. With Rajoo’s 3-Layer Multifold line, Alpha will be adding Collation Shrink Film (also known as LD shrink film), stretch film, and “milk pouch” film.",
-                    "desc2": "Please contact your sales representative to learn more about Alpha’s new product offerings."
-                }
-
-                break;
-            case '7':
-                $scope.newDetailss = {
-                    "img": "img/news/81.jpg",
-                    "title": "POF Shrink Films - A must for the Indian market",
-                    "date": "October 2015",
-                    "desc": "Wastage of fruits and vegetables are a real concern for a country like India where not only do we have to feed an ever growing population but also because over 16% of GDP is dependent on agriculture.",
-                    "desc2": "Packaging of food has evolved drastically over the last 15 years with introduction of cling film, shrink film, multi-layered barrier films (which started as 3 or 5 layers and now are crossing 11 layers). With all the innovation globally, not all of it has found success in India due to poor supply chain, lack of infrastructure, and above all, small organized retail market. Not all is gloom and doom though as the changes in government policies and tax structures will allow developments to pick up pace.",
-                    "desc3": "We, at Alpha, asked ourselves, how can we add value for brand owners to differentiate their products. The result was development of POF Shrink Film, specially designed to withstand extreme temperatures to protect the product inside.",
-                    "desc4": "This new range of Safe & Secure Shrink Film protects the product from pilferage and dust in transit so that the product reaches its destination unharmed and unaltered. Once it reaches its destination, the product can be easily differentiated from the competition due to its clarity, neatness, and shine. Due to its “anti-fog” technology, even at sub-0 degree temperature, the product is easily visible without any sign of water droplets on the film.",
-                    "desc5": "This range of Safe & Secure film is a result of over one year of development as we looked at shrinkage, holding force, and anti-fog properties just right. Alpha becomes the first to offer such film in India and having already tied up with a few brand-owners, this range of Shrink Film is a drastic improvement over other packaging methods such as PVC shrink film (gives off high odor) and cling film (not pilferage proof)."
-                }
-
-                break;
-            case '8':
-                $scope.newDetailss = {
-                    "img": "img/news/1027x553/6.jpg",
-                    "title": "Packaging Trends in 2017",
-                    "date": "January 2017",
-                    "desc": "India ended 2016 with a bang, with the government banning old high-value currency notes to curb black economy. The knock-on effect of that was a sudden slowdown in demand across all industries as the common man struggled to make ends meet due to limited availability of cash. It has been over two months since the shock move by the Modi government and it looks like the market is returning to ‘business-as-usual’. Although, every businessman knows that ‘business-as-usual’ doesn’t quite mean the same as it used to before November 8, 2016.",
-                    "desc2": "Over last few years, we have seen Indian packaging growth and development lean towards flexible packaging primarily due to limited shelf space in Indian houses. With various other advantages that flexible packaging offers over rigid packaging, such as better brand appeal, barrier properties and many more, the pace of development and quality has improved tremendously and at Alpha, we are playing our part by increasing our capacity and product offerings.",
-                    "desc3": "We launched the Mulch film in the beginning of 2017 and throughout the year, will look to increase awareness of such film in agricultural applications. India is an agriculture-based economy and we felt the need to add value to this industry. With this product Alpha has added a 'non-packaging' product to our portfolio, for the first time. The mulch film can increase crop yield by up to 33%.",
-                    "desc4": "As the Modi government introduced slew of reforms over next year, including the introduction of GST, and with the Indian packaging industry showing double-digit growth we have put in place our own expansion plans. Much of Alpha’s focus will be on POF shrink film and Mulch film as it looks to increase production capacity for both films this year.",
-                    "desc5": "At Alpha, we are as optimistic as ever about the Indian Growth Story and within that, the packaging industry. It is well known within the industry that packaging consumption per capita in India is 4 times less than China and about 10 times less than USA. With the Indian packaging industry pegged to grow from US$ 35 billion to US$73 billion by 2020, there is no other place Alpha would rather be."
-                }
-
-            default:
-
-        }
-
-
-        $scope.relatedNews = [{
-            "id": "1",
-            "title": "Meet Alpha’s Plastic Super Family in Mexico! ",
-            "image": "img/news/1.jpg"
-
-        }, {
-            "id": "2",
-            "title": "A major stride for Alpha at the Expo Pack Mexico",
-            "image": "img/news/417x258/3.jpg"
-
-        }, {
-            "id": "3",
-            "title": "Alpha Pharma Roorkee commissions ASB...",
-            "image": "img/news/417x258/2.jpg"
-
-        }, {
-            "id": "4",
-            "title": "First Annual Meet",
-            "image": "img/news/417x258/4.jpg"
-
-        }, {
-            "id": "5",
-            "title": "Alpha enters North American market",
-            "image": "img/news/417x258/1.jpg"
-
-        }, {
-            "id": "6",
-            "title": "Alpha commissions Rajoo 3-Layer Multifold line",
-            "image": "img/news/417x258/5.jpg"
-
-        }, {
-            "id": "7",
-            "title": "POF Shrink Films - A must for the Indian market",
-            "image": "img/news/81.jpg"
-
-        }, {
-            "id": "8",
-            "title": "Packaging Trends in 2017",
-            "image": "img/news/417x258/6.jpg"
-
-        }]
-
-        $scope.newsdetail = [{
-            "img": "",
-            "title": "Meet Alpha’s Plastic Super Family in Mexico! ",
-            "date": "",
-            "desc": "The packaging industry as a whole is very boring. Because it is predominantly in the B2B sector, the scope for experimenting is less. Majority of the companies have named their products based on their scientific qualities, which makes them difficult to remember. Only people from within the industry get the hang of it over a period of time.",
-            "desc2": "But, ALPHA has always believed in ‘Adding Value’ to their customers and the society at large. Why does this industry necessarily have to be boring? Why follow the same uninteresting naming convention? We decided to break the routine and do something interesting. Products will stimulate more curiosity if we add a face to them instead of giving them names based on their scientific properties. In order to differentiate Alpha from the rest, we created the Plastic Super Family, which is more relatable and spot-on entertaining. Each of the products have few distinct super powers, by which we mean the properties of Plastic, that represents a particular superhero and together they form the Plastic Super Family. PSF has 4 members - a father, mother, teenage son and an elder daughter.",
-            "desc3": "The father, Mr. Protecto represents Safe & Secure shrink film that secures the content inside the packaging from dust and moisture. He provides security. Similarly, the mother of PSF is the face of our Stretch Films. With her ability to stretch, she safeguards goods from damage during transportation. Pet bottles & jars are represented by Petty, the feather light daughter and the collation shrink film is characterized by Tuff, whose strength is his USP and his cape portrays its ability to get printed for branding.",
-            "desc4": "We are very excited to present our Plastic Super Family at the Pack Expo 2016 in Mexico. They are fun, entertaining and definitely the forerunners in their categories."
-
-        }, {
-            "img": "",
-            "title": "A major stride for Alpha at the Expo Pack Mexico ",
-            "date": "May 17-20 2016",
-            "desc": "Alpha Plastomers is participating in Expo Pack – A 4-day event being held in Santa Fe in Mexico City, Mexico from 17th to 20th May, 2016. International exhibitors in the packaging industry will present the latest machinery, materials, components, containers, proven solutions for the processing, packaging, storage and distribution of products. Participating companies offer possibilities of new business opportunities, which being the main objective of the event. Alpha wishes to increase its presence globally and carve its name on the global map of the packaging industry. It will be an ideal platform for Alpha to showcase its products and distinguish them from its competitors.",
-            "desc2": "Alpha Plastomers is a family-owned packaging solutions provider with over 25 years of experience. In 1996, Alpha Polymer (the name then) was offering not only PPTQ, but also Polyethylene (PE) bags and liners to industries including, but not limited to, textile, stationary, and household goods. By 2004, Alpha Group processed about 2,000 MT of polymers every month, which made it the largest PPTQ converter in Asia. The Indian packaging sector is ever-evolving and with Alpha’s leading position in the market in every sector, in 2006, Polyolefin (POF) Shrink Film and PET preforms were added to its portfolio. Alpha Group has become one of India’s top packaging solution provider for primary and secondary packaging industry with capacity of over seven million preforms per day and over 3,500 MT of POF shrink film annually. This tremendous growth allowed Alpha Group to diversify and add PET bottles to its portfolio for rigid packaging. Alpha Group is the only Indian company that provides solution for flexible and rigid packaging.",
-            "desc3": "The Expo Pack Mexico will play abode to some of the world renowned players in the packaging industry around for a period of 4 days. The exhibition will be spread over total floor space of 204,500 sq. ft. and is expected to have over 25,000 visitors with 1,000 exhibitors. It’s going to be an exciting time for Alpha and the packaging industry as a whole!"
-
-
-        }, {
-            "img": "",
-            "title": "Alpha Pharma Roorkee commissions ASB Nissei 12M machine",
-            "date": "February 2016",
-            "desc": "Alpha cements its presence in the Rigid Packaging industry by adding ASB Nissei 12M to allow greater flexibility in its product offerings. With the new addition, Alpha has taken its first step in what will be a steady increase in capacity to tailor to Pharmaceutical and FMCG industries."
-        }, {
-            "img": "",
-            "title": "First Annual Meet",
-            "date": "November 9-10, 2015",
-            "desc": "Alpha Plastomers held its first annual meet right before Diwali. During the two days, everything from cost control to business strategies was discussed."
-        }, {
-            "img": "",
-            "title": "Alpha enters North American market",
-            "date": "October 2015",
-            "desc": "Alpha is delighted to announce its presence in USA. A very relieved Akshay Agarwal, Director of Alpha Plastomers, said “After months of back-and-forth negotiations, we were able to come to an agreement with our USA counterparts allowing us to move closer to our customers and allowing our customers to reduce inventory and transit days."
-        }, {
-            "img": "",
-            "title": "Alpha commissions Rajoo 3-Layer Multifold line",
-            "date": "October 2015",
-            "desc": "Over the past 27 years, Alpha has shown that it is not afraid to add new products to its portfolio to stay as one of the leading packaging suppliers in India. With the addition of a 3-layer blown film line, Alpha has moved the goal post yet again and is perfectly poised to become a true “global corporation”. With Rajoo’s 3-Layer Multifold line, Alpha will be adding Collation Shrink Film (also known as LD shrink film), stretch film, and “milk pouch” film.",
-            "desc2": "Please contact your sales representative to learn more about Alpha’s new product offerings."
-        }]
+        // 
+        // switch ($stateParams.id) {
+        //     case '1':
+        //         $scope.newDetailss = {
+        //             "img": "img/news/1.jpg",
+        //             "title": "Meet Alpha’s Plastic Super Family in Mexico! ",
+        //             "date": "September 2016",
+        //             "desc": "The packaging industry as a whole is very boring. Because it is predominantly in the B2B sector, the scope for experimenting is less. Majority of the companies have named their products based on their scientific qualities, which makes them difficult to remember. Only people from within the industry get the hang of it over a period of time.",
+        //             "desc2": "But, ALPHA has always believed in ‘Adding Value’ to the customers and the society at large. Why does this industry necessarily have to be boring? Why follow the same uninteresting naming convention? We decided to break the routine and do something interesting. Products will stimulate more curiosity if we add a face to them instead of giving them names based on their scientific properties. In order to differentiate Alpha from the rest, we created the Plastic Super Family, which is more relatable and spot-on entertaining. Each of the products have few distinct super powers, by which we mean the properties of Plastic, that represents a particular superhero and together they form the Plastic Super Family. PSF has 4 members - a father, mother, teenage son and an elder daughter.",
+        //             "desc3": "The father, Mr. Protecto represents Safe & Secure shrink film that secures the content inside the packaging from dust and moisture. He provides security. Similarly, the mother of PSF is the face of our Stretch Films. With her ability to stretch, she safeguards goods from damage during transportation. Pet bottles & jars are represented by Petty, the feather light daughter and the collation shrink film is characterized by Tuff, whose strength is his USP and his cape portrays its ability to get printed for branding.",
+        //             "desc4": "We are very excited to present our Plastic Super Family at the Pack Expo 2016 in Mexico. They are fun, entertaining and definitely the forerunners in their categories."
+        //         }
+        //         break;
+        //     case '2':
+        //         $scope.newDetailss = {
+        //             "img": "img/news/1027x553/3.jpg",
+        //             "title": "A major stride for Alpha at the Expo Pack Mexico ",
+        //             "date": "May 17 2016",
+        //             "desc": "Alpha Plastomers is participating in Expo Pack – a 4-day event being held in Santa Fe in Mexico City, Mexico from 17th to 20th May, 2016. International exhibitors in the packaging industry will present the latest machinery, materials, components, containers, and proven solutions for the processing, packaging, storage and distribution of products. Participating companies offer possibilities of new business opportunities, which is the main objective of the event. Alpha wishes to increase its presence globally and carve its name on the global map of the packaging industry. It will be an ideal platform for Alpha to showcase its products and distinguish them from their competitors.",
+        //             "desc2": "Alpha Plastomers is a family-owned packaging solutions provider with over 25 years of experience. In 1996, Alpha Polymer (the name then) was offering not only PPTQ, but also Polyethylene (PE) bags and liners to industries including, but not limited to, textile, stationary and household goods. By 2004, Alpha Group processed about 2,000 MT of polymers every month, which made it the largest PPTQ converter in Asia. The Indian packaging sector is ever-evolving and with Alpha’s leading position in the market in every sector, in 2006, Polyolefin (POF) Shrink Film and PET preforms were added to its portfolio. The Alpha Group has become one of India’s top packaging solution provider for the primary and secondary packaging industry with a capacity of over seven million preforms per day and over 3,500 MT of POF shrink film annually. This tremendous growth allowed Alpha Group to diversify and add PET bottles to its portfolio for rigid packaging. The Alpha Group is the only Indian company that provides solution for flexible and rigid packaging.",
+        //             "desc3": "The Expo Pack Mexico will play abode to some of the world renowned players in the packaging industry around for a period of 4 days. The exhibition will be spread over total floor space of 204,500 sq. ft. and is expected to have over 25,000 visitors with 1,000 exhibitors. It’s going to be an exciting time for Alpha and the packaging industry as a whole!"
+        //         }
+        //         break;
+        //     case '3':
+        //         $scope.newDetailss = {
+        //             "img": "img/news/1027x553/2.jpg",
+        //             "title": "Alpha Pharma Roorkee commissions ASB Nissei 12M machine",
+        //             "date": "February 2016",
+        //             "desc": "Alpha cements its presence in the Rigid Packaging industry by adding ASB Nissei 12M to allow greater flexibility in its product offerings. With the new addition, Alpha has taken its first step in what will be a steady increase in capacity to tailor to Pharmaceutical and FMCG industries."
+        //         }
+        //
+        //         break;
+        //     case '4':
+        //         $scope.newDetailss = {
+        //             "img": "img/news/1027x553/4.jpg",
+        //             "title": "First Annual Meet",
+        //             "date": "November 9-10, 2015",
+        //             "desc": "Alpha Plastomers held its first annual meet right before Diwali. During the two days, everything from cost control to business strategies was discussed."
+        //         }
+        //
+        //         break;
+        //     case '5':
+        //         $scope.newDetailss = {
+        //             "img": "img/news/1027x553/1.jpg",
+        //             "title": "Alpha enters North American market",
+        //             "date": "October 2015",
+        //             "desc": "Alpha is delighted to announce its presence in USA. A very relieved Akshay Agarwal, Director of Alpha Plastomers, said “After months of back-and-forth and negotiations, we were able to come to an agreement with our USA counterparts allowing us to move closer to our customers and allowing our customers to reduce inventory and transit days."
+        //         }
+        //
+        //         break;
+        //     case '6':
+        //         $scope.newDetailss = {
+        //             "img": "img/news/1027x553/5.jpg",
+        //             "title": "Alpha commissions Rajoo 3-Layer Multifold line",
+        //             "date": "October 2015",
+        //             "desc": "Over the past 27 years, Alpha has shown that it is not afraid to add new products to its portfolio to stay as one of the leading packaging suppliers in India. With the addition of a 3-layer blown film line, Alpha has moved the goal post yet again and is perfectly poised to become a true “global corporation”. With Rajoo’s 3-Layer Multifold line, Alpha will be adding Collation Shrink Film (also known as LD shrink film), stretch film, and “milk pouch” film.",
+        //             "desc2": "Please contact your sales representative to learn more about Alpha’s new product offerings."
+        //         }
+        //
+        //         break;
+        //     case '7':
+        //         $scope.newDetailss = {
+        //             "img": "img/news/81.jpg",
+        //             "title": "POF Shrink Films - A must for the Indian market",
+        //             "date": "October 2015",
+        //             "desc": "Wastage of fruits and vegetables are a real concern for a country like India where not only do we have to feed an ever growing population but also because over 16% of GDP is dependent on agriculture.",
+        //             "desc2": "Packaging of food has evolved drastically over the last 15 years with introduction of cling film, shrink film, multi-layered barrier films (which started as 3 or 5 layers and now are crossing 11 layers). With all the innovation globally, not all of it has found success in India due to poor supply chain, lack of infrastructure, and above all, small organized retail market. Not all is gloom and doom though as the changes in government policies and tax structures will allow developments to pick up pace.",
+        //             "desc3": "We, at Alpha, asked ourselves, how can we add value for brand owners to differentiate their products. The result was development of POF Shrink Film, specially designed to withstand extreme temperatures to protect the product inside.",
+        //             "desc4": "This new range of Safe & Secure Shrink Film protects the product from pilferage and dust in transit so that the product reaches its destination unharmed and unaltered. Once it reaches its destination, the product can be easily differentiated from the competition due to its clarity, neatness, and shine. Due to its “anti-fog” technology, even at sub-0 degree temperature, the product is easily visible without any sign of water droplets on the film.",
+        //             "desc5": "This range of Safe & Secure film is a result of over one year of development as we looked at shrinkage, holding force, and anti-fog properties just right. Alpha becomes the first to offer such film in India and having already tied up with a few brand-owners, this range of Shrink Film is a drastic improvement over other packaging methods such as PVC shrink film (gives off high odor) and cling film (not pilferage proof)."
+        //         }
+        //
+        //         break;
+        //     case '8':
+        //         $scope.newDetailss = {
+        //             "img": "img/news/1027x553/6.jpg",
+        //             "title": "Packaging Trends in 2017",
+        //             "date": "January 2017",
+        //             "desc": "India ended 2016 with a bang, with the government banning old high-value currency notes to curb black economy. The knock-on effect of that was a sudden slowdown in demand across all industries as the common man struggled to make ends meet due to limited availability of cash. It has been over two months since the shock move by the Modi government and it looks like the market is returning to ‘business-as-usual’. Although, every businessman knows that ‘business-as-usual’ doesn’t quite mean the same as it used to before November 8, 2016.",
+        //             "desc2": "Over last few years, we have seen Indian packaging growth and development lean towards flexible packaging primarily due to limited shelf space in Indian houses. With various other advantages that flexible packaging offers over rigid packaging, such as better brand appeal, barrier properties and many more, the pace of development and quality has improved tremendously and at Alpha, we are playing our part by increasing our capacity and product offerings.",
+        //             "desc3": "We launched the Mulch film in the beginning of 2017 and throughout the year, will look to increase awareness of such film in agricultural applications. India is an agriculture-based economy and we felt the need to add value to this industry. With this product Alpha has added a 'non-packaging' product to our portfolio, for the first time. The mulch film can increase crop yield by up to 33%.",
+        //             "desc4": "As the Modi government introduced slew of reforms over next year, including the introduction of GST, and with the Indian packaging industry showing double-digit growth we have put in place our own expansion plans. Much of Alpha’s focus will be on POF shrink film and Mulch film as it looks to increase production capacity for both films this year.",
+        //             "desc5": "At Alpha, we are as optimistic as ever about the Indian Growth Story and within that, the packaging industry. It is well known within the industry that packaging consumption per capita in India is 4 times less than China and about 10 times less than USA. With the Indian packaging industry pegged to grow from US$ 35 billion to US$73 billion by 2020, there is no other place Alpha would rather be."
+        //         }
+        //
+        //     default:
+        //
+        // }
+        //
+        //
+        // $scope.relatedNews = [{
+        //     "id": "1",
+        //     "title": "Meet Alpha’s Plastic Super Family in Mexico! ",
+        //     "image": "img/news/1.jpg"
+        //
+        // }, {
+        //     "id": "2",
+        //     "title": "A major stride for Alpha at the Expo Pack Mexico",
+        //     "image": "img/news/417x258/3.jpg"
+        //
+        // }, {
+        //     "id": "3",
+        //     "title": "Alpha Pharma Roorkee commissions ASB...",
+        //     "image": "img/news/417x258/2.jpg"
+        //
+        // }, {
+        //     "id": "4",
+        //     "title": "First Annual Meet",
+        //     "image": "img/news/417x258/4.jpg"
+        //
+        // }, {
+        //     "id": "5",
+        //     "title": "Alpha enters North American market",
+        //     "image": "img/news/417x258/1.jpg"
+        //
+        // }, {
+        //     "id": "6",
+        //     "title": "Alpha commissions Rajoo 3-Layer Multifold line",
+        //     "image": "img/news/417x258/5.jpg"
+        //
+        // }, {
+        //     "id": "7",
+        //     "title": "POF Shrink Films - A must for the Indian market",
+        //     "image": "img/news/81.jpg"
+        //
+        // }, {
+        //     "id": "8",
+        //     "title": "Packaging Trends in 2017",
+        //     "image": "img/news/417x258/6.jpg"
+        //
+        // }]
+        //
+        // $scope.newsdetail = [{
+        //     "img": "",
+        //     "title": "Meet Alpha’s Plastic Super Family in Mexico! ",
+        //     "date": "",
+        //     "desc": "The packaging industry as a whole is very boring. Because it is predominantly in the B2B sector, the scope for experimenting is less. Majority of the companies have named their products based on their scientific qualities, which makes them difficult to remember. Only people from within the industry get the hang of it over a period of time.",
+        //     "desc2": "But, ALPHA has always believed in ‘Adding Value’ to their customers and the society at large. Why does this industry necessarily have to be boring? Why follow the same uninteresting naming convention? We decided to break the routine and do something interesting. Products will stimulate more curiosity if we add a face to them instead of giving them names based on their scientific properties. In order to differentiate Alpha from the rest, we created the Plastic Super Family, which is more relatable and spot-on entertaining. Each of the products have few distinct super powers, by which we mean the properties of Plastic, that represents a particular superhero and together they form the Plastic Super Family. PSF has 4 members - a father, mother, teenage son and an elder daughter.",
+        //     "desc3": "The father, Mr. Protecto represents Safe & Secure shrink film that secures the content inside the packaging from dust and moisture. He provides security. Similarly, the mother of PSF is the face of our Stretch Films. With her ability to stretch, she safeguards goods from damage during transportation. Pet bottles & jars are represented by Petty, the feather light daughter and the collation shrink film is characterized by Tuff, whose strength is his USP and his cape portrays its ability to get printed for branding.",
+        //     "desc4": "We are very excited to present our Plastic Super Family at the Pack Expo 2016 in Mexico. They are fun, entertaining and definitely the forerunners in their categories."
+        //
+        // }, {
+        //     "img": "",
+        //     "title": "A major stride for Alpha at the Expo Pack Mexico ",
+        //     "date": "May 17-20 2016",
+        //     "desc": "Alpha Plastomers is participating in Expo Pack – A 4-day event being held in Santa Fe in Mexico City, Mexico from 17th to 20th May, 2016. International exhibitors in the packaging industry will present the latest machinery, materials, components, containers, proven solutions for the processing, packaging, storage and distribution of products. Participating companies offer possibilities of new business opportunities, which being the main objective of the event. Alpha wishes to increase its presence globally and carve its name on the global map of the packaging industry. It will be an ideal platform for Alpha to showcase its products and distinguish them from its competitors.",
+        //     "desc2": "Alpha Plastomers is a family-owned packaging solutions provider with over 25 years of experience. In 1996, Alpha Polymer (the name then) was offering not only PPTQ, but also Polyethylene (PE) bags and liners to industries including, but not limited to, textile, stationary, and household goods. By 2004, Alpha Group processed about 2,000 MT of polymers every month, which made it the largest PPTQ converter in Asia. The Indian packaging sector is ever-evolving and with Alpha’s leading position in the market in every sector, in 2006, Polyolefin (POF) Shrink Film and PET preforms were added to its portfolio. Alpha Group has become one of India’s top packaging solution provider for primary and secondary packaging industry with capacity of over seven million preforms per day and over 3,500 MT of POF shrink film annually. This tremendous growth allowed Alpha Group to diversify and add PET bottles to its portfolio for rigid packaging. Alpha Group is the only Indian company that provides solution for flexible and rigid packaging.",
+        //     "desc3": "The Expo Pack Mexico will play abode to some of the world renowned players in the packaging industry around for a period of 4 days. The exhibition will be spread over total floor space of 204,500 sq. ft. and is expected to have over 25,000 visitors with 1,000 exhibitors. It’s going to be an exciting time for Alpha and the packaging industry as a whole!"
+        //
+        //
+        // }, {
+        //     "img": "",
+        //     "title": "Alpha Pharma Roorkee commissions ASB Nissei 12M machine",
+        //     "date": "February 2016",
+        //     "desc": "Alpha cements its presence in the Rigid Packaging industry by adding ASB Nissei 12M to allow greater flexibility in its product offerings. With the new addition, Alpha has taken its first step in what will be a steady increase in capacity to tailor to Pharmaceutical and FMCG industries."
+        // }, {
+        //     "img": "",
+        //     "title": "First Annual Meet",
+        //     "date": "November 9-10, 2015",
+        //     "desc": "Alpha Plastomers held its first annual meet right before Diwali. During the two days, everything from cost control to business strategies was discussed."
+        // }, {
+        //     "img": "",
+        //     "title": "Alpha enters North American market",
+        //     "date": "October 2015",
+        //     "desc": "Alpha is delighted to announce its presence in USA. A very relieved Akshay Agarwal, Director of Alpha Plastomers, said “After months of back-and-forth negotiations, we were able to come to an agreement with our USA counterparts allowing us to move closer to our customers and allowing our customers to reduce inventory and transit days."
+        // }, {
+        //     "img": "",
+        //     "title": "Alpha commissions Rajoo 3-Layer Multifold line",
+        //     "date": "October 2015",
+        //     "desc": "Over the past 27 years, Alpha has shown that it is not afraid to add new products to its portfolio to stay as one of the leading packaging suppliers in India. With the addition of a 3-layer blown film line, Alpha has moved the goal post yet again and is perfectly poised to become a true “global corporation”. With Rajoo’s 3-Layer Multifold line, Alpha will be adding Collation Shrink Film (also known as LD shrink film), stretch film, and “milk pouch” film.",
+        //     "desc2": "Please contact your sales representative to learn more about Alpha’s new product offerings."
+        // }]
 
     })
     .controller('EventsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
