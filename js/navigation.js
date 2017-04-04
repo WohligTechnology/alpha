@@ -155,35 +155,36 @@ var navigationservice = angular.module('navigationservice', [])
 
            getHomeSlider: function(callback) {
                $http({
-                   url: adminurl + 'HomeSlider/search',
+                   url: adminurl + 'HomeSlider/getAll',
                    method: 'POST',
                    withCredentials: true
                }).then(callback);
            },
-           getClients: function(callback) {
+
+           getAllClients: function(callback) {
                $http({
-                   url: adminurl + 'clients/search',
+                   url: adminurl + 'clients/getAll',
                    method: 'POST',
                    withCredentials: true
                }).then(callback);
            },
            getJourney: function(callback) {
                $http({
-                   url: adminurl + 'journey/search',
+                   url: adminurl + 'journey/getAll',
                    method: 'POST',
                    withCredentials: true
                }).then(callback);
            },
            getLatestNews: function(callback) {
                $http({
-                   url: adminurl + 'latestNews/search',
+                   url: adminurl + 'latestNews/getAll',
                    method: 'POST',
                    withCredentials: true
                }).then(callback);
            },
            getProductStatistics: function(callback) {
                $http({
-                   url: adminurl + 'productStatistics/search',
+                   url: adminurl + 'productStatistics/getAll',
                    method: 'POST',
                    withCredentials: true
                }).then(callback);
@@ -203,42 +204,42 @@ var navigationservice = angular.module('navigationservice', [])
 
            getProducts: function(callback) {
                $http({
-                   url: adminurl + 'Products/search',
+                   url: adminurl + 'Products/getAll',
                    method: 'POST',
                    withCredentials: true
                }).then(callback);
            },
            getShrinkFilm: function(callback) {
                $http({
-                   url: adminurl + 'ShrinkFilm/search',
+                   url: adminurl + 'ShrinkFilm/getAll',
                    method: 'POST',
                    withCredentials: true
                }).then(callback);
            },
            getBottles: function(callback) {
                $http({
-                   url: adminurl + 'Bottles/search',
+                   url: adminurl + 'Bottles/getAll',
                    method: 'POST',
                    withCredentials: true
                }).then(callback);
            },
            getSpecialityFilms: function(callback) {
                $http({
-                   url: adminurl + 'SpecialityFilms/search',
+                   url: adminurl + 'SpecialityFilms/getAll',
                    method: 'POST',
                    withCredentials: true
                }).then(callback);
            },
            getCollation: function(callback) {
                $http({
-                   url: adminurl + 'Collation/search',
+                   url: adminurl + 'Collation/getAll',
                    method: 'POST',
                    withCredentials: true
                }).then(callback);
            },
            getAgricultural: function(callback) {
                $http({
-                   url: adminurl + 'Agricultural/search',
+                   url: adminurl + 'Agricultural/getAll',
                    method: 'POST',
                    withCredentials: true
                }).then(callback);

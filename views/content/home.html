@@ -152,7 +152,7 @@
                 <div  ng-bind-html="data.content">
 </div>
               </div>
-            <div class="display-inline jr2-img">
+            <div class="display-inline jr2-img" ng-if="data.journeyimage">
                   <img ng-src="{{data.journeyimage | uploadpath}}" alt="" class="img-responsive">
             </div>
             </div>
@@ -207,7 +207,7 @@
           <h1 class="text-up color-white font-bold font-revelution ft-40">LATEST NEWS</h1>
         </div>
         <div class="nw-slider " ng-if="latestNews">
-        <flex-slider flex-slide="item in latestNews track by $index" animation="slide" item-width="320" item-margin="60" animationloop="true" move="1" slideshow-Speed="2000">
+        <flex-slider flex-slide="item in latestNews|orderBy:'-date' track by $index" animation="slide" item-width="320" item-margin="60" animationloop="true" move="1" slideshow-Speed="2000">
         <li>
           <div class="nw-box" ui-sref="news-detail({id:item._id})">
             <div class="al-relative img-animated">

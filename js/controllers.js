@@ -33,22 +33,23 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         ];
         NavigationService.getHomeSlider(function(data) {
             console.log("data", data);
-            $scope.homeSliders = data.data.data.results;
+            $scope.homeSliders = data.data.data;
             console.log($scope.homeSliders, "$scope.homeSliders");
 
         });
-        NavigationService.getClients(function(data) {
-            $scope.allClients = data.data.data.results;
+        NavigationService.getAllClients(function(data) {
+            $scope.allClients = data.data.data;
         });
+
         NavigationService.getJourney(function(data) {
-            $scope.journey = data.data.data.results;
+            $scope.journey = data.data.data;
         })
         NavigationService.getLatestNews(function(data) {
-            $scope.latestNews = data.data.data.results;
+            $scope.latestNews = data.data.data;
         });
         NavigationService.getProductStatistics(function(data) {
             console.log("data", data);
-            $scope.productStatistics = data.data.data.results;
+            $scope.productStatistics = data.data.data;
             console.log("$scope.productStatistics", $scope.productStatistics);
         });
 
@@ -489,7 +490,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
         NavigationService.getLatestNews(function(data) {
-            $scope.latestNews = data.data.data.results;
+            $scope.latestNews = data.data.data;
             console.log("  $scope.latestNews", $scope.latestNews);
         });
 
@@ -501,7 +502,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.navigation = NavigationService.getnav();
 
         NavigationService.getJourney(function(data) {
-            $scope.journey = data.data.data.results;
+            $scope.journey = data.data.data;
             console.log("$scope.journeyBefore", $scope.journey);
             for (var i = 0; i < $scope.journey.length; i++) {
                 if ((i + 2) % 2 == 0) {
@@ -536,7 +537,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         };
         NavigationService.getProducts(function(data) {
             console.log("data", data);
-            $scope.bagsLiners = data.data.data.results;
+            $scope.bagsLiners = data.data.data;
+            // $scope.bagsLiners = data.data.data.results;
             console.log($scope.bagsLiners, "$scope.bagsLiners");
             $scope.gallery = $scope.bagsLiners[0].gallery;
             $scope.testimonials = $scope.bagsLiners[0].testimonial;
@@ -627,16 +629,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     };
     NavigationService.getSpecialityFilms(function(data) {
         console.log("data", data);
-        $scope.specialityFilms = data.data.data.results;
+        $scope.specialityFilms = data.data.data;
     });
     NavigationService.getCollation(function(data) {
         console.log(data, "data");
-        $scope.collations = data.data.data.results;
+        $scope.collations = data.data.data;
         console.log("$scope.collations", $scope.collations);
     });
     NavigationService.getAgricultural(function(data) {
         console.log("data", data);
-        $scope.agricultural = data.data.data.results;
+        $scope.agricultural = data.data.data;
     })
     $scope.contactus = {};
       $scope.complete=false;
@@ -755,7 +757,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         };
         NavigationService.getShrinkFilm(function(data) {
             console.log("data", data);
-            $scope.shrinkFilms = data.data.data.results;
+            $scope.shrinkFilms = data.data.data;
+            // $scope.shrinkFilms = data.data.data.results;
             console.log("$scope.shrinkFilms", $scope.shrinkFilms);
             $scope.gallery = $scope.shrinkFilms[0].gallery;
             $scope.testimonial = $scope.shrinkFilms[0].testimonial;
@@ -864,7 +867,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         };
         NavigationService.getBottles(function(data) {
             console.log("data", data);
-            $scope.petBottles = data.data.data.results;
+            $scope.petBottles = data.data.data;
+            // $scope.petBottles = data.data.data.results;
             console.log("$scope.petBottles", $scope.petBottles);
             $scope.gallery = $scope.petBottles[0].gallery;
             console.log($scope.gallery, " $scope.gallery");
