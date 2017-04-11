@@ -6967,6 +6967,8 @@ footer {
   .sub-sec li {
     padding: 0 2px 10px; }
 
+.map {
+  pointer-events: none; }
 
 .font-keem {
   font-family: 'Reem Kufi'; }
