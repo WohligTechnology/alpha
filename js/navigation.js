@@ -30,11 +30,7 @@ var navigationservice = angular.module('navigationservice', [])
               anchor: "journey",
               subnavs: []
             }]
-        // subnav: [{
-        //     name: "Subnav1",
-        //     classis: "active",
-        //     anchor: "home"
-        // }]
+
     }, {
         name: "Products",
         classis: "",
@@ -73,12 +69,7 @@ var navigationservice = angular.module('navigationservice', [])
             // isId: "no",
         }]
     },
-    // {
-    //     name: "Clients",
-    //     classis: "",
-    //     anchor: "clients",
-    //     subnav: []
-    // },
+
     {
         name: "Quality Policy",
         classis: "",

@@ -30,9 +30,9 @@
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12 padding0">
                   <div class="tl-data">
-                    <p class="font-roboto" ng-bind-html="data.content">
+                    <div class="font-roboto" ng-bind-html="data.content">
                       <!-- Diversified to manufacture Mulch Film -->
-                    </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -53,17 +53,24 @@
     <div class="timeline-panel line-left">
       <div class="row">
         <div class="journey-sec">
-          <div class="col-md-6 padding0">
+          <div class="col-md-6 padding0 hidden-xs">
             <div class="tl-data text-right">
-              <p class="font-roboto" ng-bind-html="data.content">
+              <div class="font-roboto" ng-bind-html="data.content">
                 <!-- Diversified to manufacture Collation Shrink Film -->
-              </p>
+              </div>
             </div>
           </div>
           <div class="col-md-6" ng-if="data.journeyimage">
             <div class="tl-img">
               <img ng-src="{{data.journeyimage|uploadpath}}" alt="" class="img-responsive">
               <!-- <img src="img/t2.jpg" alt="" class="img-responsive"> -->
+            </div>
+          </div>
+          <div class="col-md-6 padding0 visible-xs">
+            <div class="tl-data text-right">
+              <div class="font-roboto" ng-bind-html="data.content">
+                <!-- Diversified to manufacture Collation Shrink Film -->
+              </div>
             </div>
           </div>
 

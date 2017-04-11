@@ -54,7 +54,8 @@
     <span>    Collation</span>
       <span>   Shrink Film</span>
         </button>
-    </div>OUR RANGE OF PRODUCTS
+    </div>
+    <!-- </div>OUR RANGE OF PRODUCTS -->
 
     <div class="col-xs-6">
       <button type="button" class="btn btn-default text-center text-up font-revelution text-head color-red" ng-click="tab = 2" ng-class="{'active':tab == 2}">
@@ -82,7 +83,7 @@
                     <div class="slider1 visible-xs">
     <flex-slider flex-slide="item in collations[0].gallery track by $index" animation="slide" animationloop="true" ng-if="tab == 1" slideshow-Speed="3000">
                           <li>
-                              <img ng-src="{{item.image}}" alt="">
+                              <img ng-src="{{item.image | uploadpath}}" alt="">
                           </li>
                       </flex-slider>
                     </div>

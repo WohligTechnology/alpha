@@ -176,6 +176,9 @@
     float: none !important;
     text-align: center;
   }
+  .timeline li .timeline-panel {
+    float: right;
+  }
   .tldate:before {
     display: none;
   }

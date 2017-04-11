@@ -270,7 +270,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             console.log("$scope.detailNews", $scope.detailNews);
             $scope.relatedNewss = $scope.detailNews.relatednews;
         })
-        // 
+        //
         // switch ($stateParams.id) {
         //     case '1':
         //         $scope.newDetailss = {
@@ -946,6 +946,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $(window).scrollTop(0);
     });
     $.fancybox.close(true);
+    $scope.showSub=function(){
+    $scope.show=!$scope.show;
+    }
+
 })
 
 .controller('languageCtrl', function($scope, TemplateService, $translate, $rootScope) {

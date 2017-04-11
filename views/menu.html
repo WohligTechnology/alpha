@@ -17,45 +17,48 @@
   </li>
 </ul>
 <ul class="nav navbar-nav hidden-md hidden-lg hidden-sm">
-  <li>
-    <a ui-sref="" data-toggle="dropdown" class="dropdown-toggle">
+<li  class="dropdown">
+    <a ui-sref="" ng-click="viewDropdown = !viewDropdown">
       overview
     </a>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu" ng-show="viewDropdown">
       <li>
-        <a ui-sref="aboutus">
+        <a ui-sref="aboutus" class="text-center">
           About Us
         </a>
       </li>
       <li>
-        <a ui-sref="journey">
+        <a ui-sref="journey" class="text-center">
           Journey
         </a>
       </li>
     </ul>
   </li>
   <li>
-    <a href="" data-toggle="dropdown" class="dropdown-toggle">
+    <a ng-click="viewDropdown1 = !viewDropdown1">
       product
     </a>
-    <ul class="dropdown-menu">
+    <!-- <a href="" data-toggle="dropdown" class="dropdown-toggle">
+      product
+    </a> -->
+    <ul class="dropdown-menu" ng-show="viewDropdown1">
       <li>
-        <a ui-sref="bags-liners">
+        <a ui-sref="bags-liners" class="text-center">
           PP/PE Bags & Liners
         </a>
       </li>
       <li>
-        <a ui-sref="pof">
+        <a ui-sref="pof" class="text-center">
         POF Shrink Film
         </a>
       </li>
       <li>
-        <a ui-sref="speciality-film">
+        <a ui-sref="speciality-film" class="text-center">
         Speciality Films
         </a>
       </li>
       <li>
-        <a ui-sref="pet">
+        <a ui-sref="pet" class="text-center">
         PET Bottles
         </a>
       </li>
@@ -91,4 +94,6 @@
       contact us
     </a>
   </li>
+
+    
 </ul>
