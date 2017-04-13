@@ -52,158 +52,181 @@
     <img src="img/black-ribbon.png" alt="" class="img-responsive table-in hidden-xs">
     <div class="container">
       <div class="row pd100">
-        <div class="col-md-4">
-          <h2 class="text-up font-revelution text-head text-center ft-40">AVAILABLE SIZES</h2>
-          <table class="table table-bordered size-table">
+
+        <div class="col-md-4 col-sm-12">
+          <div class="pof-table1">
+            <h2 class="text-up font-revelution text-head text-center ft-40">AVAILABLE SIZES</h2>
+            <table class="table table-bordered size-table">
+              <thead class="thead-default">
+                <tr>
+
+                  <th>Microns</th>
+                  <th>Length(MTS.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+
+                  <td>12</td>
+                  <td>1665</td>
+                </tr>
+                <tr>
+
+                  <td>15</td>
+                  <td>1332</td>
+                </tr>
+                <tr>
+
+                  <td>19</td>
+                  <td>1067</td>
+                </tr>
+                <tr>
+
+                  <td>25</td>
+                  <td>800</td>
+                </tr>
+                <tr>
+
+                  <td>30</td>
+                  <td>400</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-8 pdl20 col-sm-12">
+          <h2 class="text-up font-revelution text-head ft-40 text-center">Technical Specifications</h2>
+
+          <!-- star -->
+          <!-- <span uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span> -->
+          <!-- star end -->
+
+          <table class="table table-bordered size-table table-2">
             <thead class="thead-default">
               <tr>
 
-                <th>Microns</th>
-                <th>Length(MTS.)</th>
+                <th></th>
+                <th>NSF</th>
+                <th>SSF</th>
+                <th>HPSF</th>
+
               </tr>
             </thead>
             <tbody>
               <tr>
 
-                <td>12</td>
-                <td>1665</td>
+                <td>Tensile/Elongation</td>
+                <td>
+                  <span uib-rating ng-model="rate3" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+                <td>
+                  <span uib-rating ng-model="rate5" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+                <td>
+                  <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+
               </tr>
               <tr>
 
-                <td>15</td>
-                <td>1332</td>
+                <td>Tear Strength</td>
+                <td>
+                  <span uib-rating ng-model="rate3" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+                <td>
+                  <span uib-rating ng-model="rate5" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+                <td>
+                  <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+
               </tr>
               <tr>
 
-                <td>19</td>
-                <td>1067</td>
+                <td>Seal Strength</td>
+                <td>
+                  <span uib-rating ng-model="rate3" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+                <td>
+                  <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+                <td>
+                  <span uib-rating ng-model="rate5" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+
               </tr>
               <tr>
 
-                <td>25</td>
-                <td>800</td>
+                <td>Dart</td>
+                <td>
+                  <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+                <td>
+                  <span uib-rating ng-model="rate3" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+                <td>
+                  <span uib-rating ng-model="rate5" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+
               </tr>
               <tr>
+                <td>Optics</td>
+                <td>
+                  <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+                <td>
+                  <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+                <td>
+                  <span uib-rating ng-model="rate5" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
 
-                <td>30</td>
-                <td>400</td>
+              </tr>
+              <tr>
+                <td>Shrinkage</td>
+                <td>
+                  <span uib-rating ng-model="rate3" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+                <td>
+                  <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+                <td>
+                  <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                    titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </td>
+
               </tr>
             </tbody>
           </table>
-        </div>
-        <div class="col-md-8 pdl20">
-          <h2 class="text-up font-revelution text-head ft-40 text-center">Technical Specifications</h2>
-
-  <!-- star -->
-  <!-- <span uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span> -->
-<!-- star end -->
-
-  <table class="table table-bordered size-table table-2">
-    <thead class="thead-default">
-      <tr>
-
-        <th></th>
-        <th>NSF</th>
-        <th>SSF</th>
-        <th>HPSF</th>
-
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-
-        <td>Tensile/Elongation</td>
-        <td>
-          <span uib-rating ng-model="rate3" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-        </td>
-        <td>
-          <span uib-rating ng-model="rate5" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-        </td>
-        <td>
-          <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-        </td>
-
-      </tr>
-      <tr>
-
-        <td>Tear Strength</td>
-        <td>
-          <span uib-rating ng-model="rate3" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-        </td>
-        <td>
-          <span uib-rating ng-model="rate5" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-        </td>
-        <td>
-          <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-        </td>
-
-      </tr>
-      <tr>
-
-        <td>Seal Strength</td>
-        <td>
-          <span uib-rating ng-model="rate3" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-        </td>
-        <td>
-          <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-        </td>
-        <td>
-          <span uib-rating ng-model="rate5" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-        </td>
-
-      </tr>
-      <tr>
-
-        <td>Dart</td>
-        <td>
-          <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-        </td>
-        <td>
-          <span uib-rating ng-model="rate3" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-        </td>
-        <td>
-          <span uib-rating ng-model="rate5" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-        </td>
-
-      </tr>
-      <tr>
-     <td>Optics</td>
-     <td>
-       <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-     </td>
-     <td>
-       <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-     </td>
-     <td>
-       <span uib-rating ng-model="rate5" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-     </td>
-
-      </tr>
-      <tr>
-     <td>Shrinkage</td>
-     <td>
-       <span uib-rating ng-model="rate3" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-     </td>
-     <td>
-       <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-     </td>
-     <td>
-       <span uib-rating ng-model="rate4" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-     </td>
-
-      </tr>
-    </tbody>
-  </table>
-  <a href="img/pof/pofspec.pdf" target="_blank">        <div class="spec">
-      <div class="pdf">
-        <img src="img/pdf-red.png" alt="" class="img-responsive">
-      </div>
-      <div class="pdf-desc">
-        <span>Standard Film Specification</span>
-      </div>
+          <a href="img/pof/pofspec.pdf" target="_blank">
+            <div class="spec">
+              <div class="pdf">
+                <img src="img/pdf-red.png" alt="" class="img-responsive">
+              </div>
+              <div class="pdf-desc">
+                <span>Standard Film Specification</span>
+              </div>
 
 
-  </div></a>
+            </div>
+          </a>
 
           <!-- <div class="spec">
         <div class="pdf">
@@ -239,36 +262,38 @@
         <h2 class="text-center text-up font-revelution text-head ft-40">GALLERY</h2>
         <div class="gal">
           <div class="slider1 hidden-xs">
-            <flex-slider  class="carousel" flex-slide="item in gallery track by $index" animation="slide"  sync="#carousel" slider-id="slider" slideshow="false">
-                <li>
-                    <img ng-src="{{item.image | uploadpath}}" alt="" >
-                </li>
+            <flex-slider class="carousel" flex-slide="item in gallery track by $index" animation="slide" sync="#carousel" slider-id="slider"
+              slideshow="false">
+              <li>
+                <img ng-src="{{item.image | uploadpath}}" alt="">
+              </li>
             </flex-slider>
           </div>
-<!-- mobileslider -->
+          <!-- mobileslider -->
           <div class="slider1 visible-xs">
 
-              <flex-slider flex-slide="item in gallery track by $index" animation="slide" animationloop="true" slideshow-Speed="3000">
-                <li>
-                    <img ng-src="{{item.image | uploadpath}}" alt="">
-                </li>
+            <flex-slider flex-slide="item in gallery track by $index" animation="slide" animationloop="true" slideshow-Speed="3000">
+              <li>
+                <img ng-src="{{item.image | uploadpath}}" alt="">
+              </li>
             </flex-slider>
           </div>
 
           <div class="text-center pdt10 visible-xs visible-sm">
-              <a href="img/pdf/POF shrink film.pdf" target="_blank"><button type="button" class="btn btn-default btn-brochure btn-part1 text-up">Download Brochure</button></a>
+            <a href="img/pdf/POF shrink film.pdf" target="_blank"><button type="button" class="btn btn-default btn-brochure btn-part1 text-up">Download Brochure</button></a>
           </div>
-<!-- carousel -->
-            <div class="slider2 hidden-xs">
-    <flex-slider class="carousel" flex-slide="item in gallery track by $index" animation="slide" item-width="228" item-margin="5" move="1" slideshow-speed=1000 direction-nav="false" control-nav="false" as-nav-for="#slider" slider-id="carousel">
-                <li>
-                  <div class="img-animated">
-                    <img ng-src="{{item.thumbimage | uploadpath}}" alt="" class="hover-sec">
-                  </div>
-                </li>
+          <!-- carousel -->
+          <div class="slider2 hidden-xs">
+            <flex-slider class="carousel" flex-slide="item in gallery track by $index" animation="slide" item-width="228" item-margin="5"
+              move="1" slideshow-speed=1000 direction-nav="false" control-nav="false" as-nav-for="#slider" slider-id="carousel">
+              <li>
+                <div class="img-animated">
+                  <img ng-src="{{item.thumbimage | uploadpath}}" alt="" class="hover-sec">
+                </div>
+              </li>
             </flex-slider>
 
-</div>
+          </div>
         </div>
       </div>
     </div>
@@ -279,11 +304,11 @@
       <div class="profile-desc">
         <img src="img/comma.png" alt="" class="img-responsive test-comma hidden-xs">
         <h2 class="text-center text-up font-revelution text-head color-red ft-40">TESTIMONIALS</h2>
-      	<flex-slider flex-slide="item in testimonial track by $index"  item-margin="0" slideshow= "false">
+        <flex-slider flex-slide="item in testimonial track by $index" item-margin="0" slideshow="false">
           <li>
             <div class="row pd100">
               <div class="col-md-3">
-                <div class="profile-img" >
+                <div class="profile-img">
                   <img src="img/PET/prof.jpg" alt=" " class="img-responsive ">
                 </div>
               </div>
@@ -301,7 +326,7 @@
             </div>
           </li>
         </flex-slider>
-      	<!-- <flex-slider flex-slide="item in flexprofile track by $index"  item-margin="0" slideshow= "false">
+        <!-- <flex-slider flex-slide="item in flexprofile track by $index"  item-margin="0" slideshow= "false">
           <li>
             <div class="row pd100">
               <div class="col-md-3">
@@ -326,63 +351,64 @@
     </div>
   </div>
   <div class="enquiry-form" ng-if="!complete">
-<a href="img/pdf/POF shrink film.pdf" target="_blank"><button type="button" class="btn btn-default btn-brochure hidden-xs">Download Brochure</button></a>
+    <a href="img/pdf/POF shrink film.pdf" target="_blank"><button type="button" class="btn btn-default btn-brochure hidden-xs">Download Brochure</button></a>
     <div class="container">
       <div class="enquiry-sec text-center pdt-40">
         <h2 class="text-up font-revelution text-head color-red ft-40">ENQUIRE NOW</h2>
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <form class="form-sec" ng-submit="sendEmail(contactus);">
-                                <div class="row">
-                                    <div class="col-md-8 col-md-offset-2">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" ng-model="contactus.name" id="name" placeholder="Enter Name" ng-pattern="/^[a-zA-Z\s]*$/"
-aplha-only   required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4  col-md-offset-2">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" ng-model="contactus.email" id="email" placeholder="Enter Email" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="tel" class="form-control"  id="mobile" ng-model="contactus.mobile" placeholder="Mobile Number" minlength="10" maxlength="10"  only-digits required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4 col-md-offset-2 col-xs-12 col-pd">
-                                        <div class="form-group" >
-                                            <div class="radio rad-sec">
-                                                <label class="pull-left"><input type="radio" ng-model="contactus.enquiryFor" ng-value="'PP/PE Liners'" name="optradio" class="" required>PP/PE Liners</label>
-                                                <label class="pull-right lbl2"><input type="radio" ng-model="contactus.enquiryFor" ng-value="'POF Shrink Film'" name="optradio" class="" required>POF Shrink Film</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-xs-12 col-pd">
-                                        <div class="form-group">
-                                            <div class="radio rad-sec">
-                                                <label class="pull-left"><input type="radio" ng-model="contactus.enquiryFor" ng-value="'PET Bottles'" name="optradio" class="" required>PET Bottles</label>
-                                                <label class="pull-right lbl2"><input type="radio" ng-model="contactus.enquiryFor" ng-value="'Speciality Films'" name="optradio" class="" required>Speciality Films</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-8 col-md-offset-2">
-                                        <div class="form-group">
-                                            <input type="text-area" ng-model="contactus.message" class="form-control" id="message" placeholder="Message" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="submit-sec text-center">
-                                    <button type="submit" class="btn btn-default sub-btn" >Submit</button>
-                                </div>
-                            </form>
-            </div>
+          <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+            <form class="form-sec" ng-submit="sendEmail(contactus);">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <div class="form-group">
+                    <input type="text" class="form-control" ng-model="contactus.name" id="name" placeholder="Enter Name" ng-pattern="/^[a-zA-Z\s]*$/"
+                      aplha-only required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4  col-md-offset-2">
+                  <div class="form-group">
+                    <input type="email" class="form-control" ng-model="contactus.email" id="email" placeholder="Enter Email" required>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input type="tel" class="form-control" id="mobile" ng-model="contactus.mobile" placeholder="Mobile Number" minlength="10"
+                      maxlength="10" only-digits required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-md-offset-2 col-xs-12 col-pd">
+                  <div class="form-group">
+                    <div class="radio rad-sec">
+                      <label class="pull-left"><input type="radio" ng-model="contactus.enquiryFor" ng-value="'PP/PE Liners'" name="optradio" class="" required>PP/PE Liners</label>
+                      <label class="pull-right lbl2"><input type="radio" ng-model="contactus.enquiryFor" ng-value="'POF Shrink Film'" name="optradio" class="" required>POF Shrink Film</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-12 col-pd">
+                  <div class="form-group">
+                    <div class="radio rad-sec">
+                      <label class="pull-left"><input type="radio" ng-model="contactus.enquiryFor" ng-value="'PET Bottles'" name="optradio" class="" required>PET Bottles</label>
+                      <label class="pull-right lbl2"><input type="radio" ng-model="contactus.enquiryFor" ng-value="'Speciality Films'" name="optradio" class="" required>Speciality Films</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <div class="form-group">
+                    <input type="text-area" ng-model="contactus.message" class="form-control" id="message" placeholder="Message" required>
+                  </div>
+                </div>
+              </div>
+              <div class="submit-sec text-center">
+                <button type="submit" class="btn btn-default sub-btn">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

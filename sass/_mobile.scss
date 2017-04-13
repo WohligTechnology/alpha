@@ -3,7 +3,9 @@
     padding: 25px 40px 0;
   }
 }
+
 @media (max-width: $screen-md-max) {}
+
 @media (max-width: $screen-sm-max) {
   .lbl2 {
     float: none !important;
@@ -20,7 +22,7 @@
   .logo {
     width: 144px;
   }
-  .nav > li > a {
+  .nav>li>a {
     padding: 14px 16px;
   }
   .timeline li .timeline-panel {
@@ -133,6 +135,9 @@
     margin: 0;
     padding: 0;
   }
+  .navbar-nav>li>.drop-menu a {
+    padding: 2px 20px;
+  }
   .rl-nw {
     display: inline-block;
     width: 48%;
@@ -171,6 +176,40 @@
     font-size: 14px;
   }
 }
+
+.add {
+  padding: 30px 30px 35px 40px;
+  right: 43px;
+}
+
+.map-home {
+  padding: 0 45px;
+}
+
+.news-sec {
+  height: 540px;
+}
+
+.news {
+  padding: 20px 0;
+}
+
+.pof .pdl20 {
+  padding: 0 15px;
+}
+
+.bags-liners .list-cont h3 {
+  font-size: 18px;
+}
+
+.bags-liners li {
+  font-size: 15px;
+}
+
+.petslider .pdt10 {
+  margin-bottom: 50px;
+}
+
 @media (max-width: $screen-xs-max) {
   .design-by {
     float: none !important;
@@ -454,7 +493,7 @@
     display: inline-block;
     width: 85%;
   }
-  .nav > li > a {
+  .nav>li>a {
     position: relative;
     display: block;
     padding: 6px 18px;
@@ -579,6 +618,7 @@
     float: none !important;
   }
 }
+
 @media (max-width:480px) {
   .petslider .gallery-holder .flex-control-nav {
     display: none !important;
@@ -613,7 +653,7 @@
     font-size: 13px;
   }
   .navbar-nav .open .dropdown-menu .dropdown-header,
-  .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-nav .open .dropdown-menu>li>a {
     padding: 2px 15px 2px 25px;
   }
   .mob-slider {
@@ -896,7 +936,7 @@
     display: inline-block;
     width: 85%;
   }
-  .nav > li > a {
+  .nav>li>a {
     position: relative;
     display: block;
     padding: 6px 18px;

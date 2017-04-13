@@ -1,20 +1,22 @@
 <section>
   <div class="home-slider">
 
-    <flex-slider  flex-slide="s in homeSliders track by $index" prev-text="" next-text="" manual-controls=".custom-pagination li" slideshow-Speed= "3000" class="hidden-xs" direction-Nav= "false">
-        <li>
-            <a ui-sref="speciality-film" ng-if="s._id == '58ca7b1c19165f3e59d56ef0'"><img ng-src="{{s.desktopimage | uploadpath}}" class="img-responsive ban-full"></a>
-              <a ui-sref="pof" ng-if="s._id == '58ca7ad219165f3e59d56ec2'"><img ng-src="{{s.desktopimage | uploadpath}}" class="img-responsive ban-full"></a>
+    <flex-slider flex-slide="s in homeSliders track by $index" prev-text="" next-text="" manual-controls=".custom-pagination li"
+      slideshow-Speed="3000" class="hidden-xs" direction-Nav="false">
+      <li>
+        <a ui-sref="speciality-film" ng-if="s._id == '58ca7b1c19165f3e59d56ef0'"><img ng-src="{{s.desktopimage | uploadpath}}" class="img-responsive ban-full"></a>
+        <a ui-sref="pof" ng-if="s._id == '58ca7ad219165f3e59d56ec2'"><img ng-src="{{s.desktopimage | uploadpath}}" class="img-responsive ban-full"></a>
 
-        </li>
+      </li>
     </flex-slider>
 
-    <flex-slider  flex-slide="s in homeSliders track by $index" prev-text="" next-text="" manual-controls=".custom-pagination li" slideshow-Speed= "3000" class="visible-xs" direction-Nav= "false">
-        <li>
-            <a  ui-sref="speciality-film" ng-if="s._id == '58ca7b1c19165f3e59d56ef0'"><img ng-src="{{s.mobileimage | uploadpath}}" class="img-responsive ban-full"></a>
-            <a  ui-sref="pof" ng-if="s._id == '58ca7ad219165f3e59d56ec2'"><img ng-src="{{s.mobileimage | uploadpath}}" class="img-responsive ban-full"></a>
+    <flex-slider flex-slide="s in homeSliders track by $index" prev-text="" next-text="" manual-controls=".custom-pagination li"
+      slideshow-Speed="3000" class="visible-xs" direction-Nav="false">
+      <li>
+        <a ui-sref="speciality-film" ng-if="s._id == '58ca7b1c19165f3e59d56ef0'"><img ng-src="{{s.mobileimage | uploadpath}}" class="img-responsive ban-full"></a>
+        <a ui-sref="pof" ng-if="s._id == '58ca7ad219165f3e59d56ec2'"><img ng-src="{{s.mobileimage | uploadpath}}" class="img-responsive ban-full"></a>
 
-        </li>
+      </li>
     </flex-slider>
 
     <!-- <flex-slider  ng-if="!secondTab" flex-slide="s in mySlides track by $index" prev-text="" next-text="" manual-controls=".custom-pagination li" >
@@ -36,10 +38,10 @@
     <div class="slider-nav">
       <div class="al-list text-center">
         <ul class="text-up custom-pagination">
-          <li ng-click="clickMe2();" >
+          <li ng-click="clickMe2();">
             <a>POF Shrink Films</a>
           </li>
-        <li ng-click="clickMe1();">
+          <li ng-click="clickMe1();">
             <a> Speciality Films</a>
           </li>
 
@@ -84,28 +86,28 @@
                 <div class="count-box">
                   <strong>serving</strong>
                   <h4>{{productStatistics[0].industries}}</h4>
-              <strong>industries</strong>
+                  <strong>industries</strong>
                 </div>
               </li>
               <li>
                 <div class="count-box">
                   <strong>PROCESSING</strong>
                   <h4>{{productStatistics[0].polymer}}</h4>
-              <strong>MT POLYMER/YEAR</strong>
+                  <strong>MT POLYMER/YEAR</strong>
                 </div>
               </li>
               <li>
                 <div class="count-box">
                   <strong>Using</strong>
                   <h4>{{productStatistics[0].technologies}}</h4>
-              <strong>TECHNOLOGIES</strong>
+                  <strong>TECHNOLOGIES</strong>
                 </div>
               </li>
               <li>
                 <div class="count-box">
                   <strong>Over</strong>
                   <h4>{{productStatistics[0].employees}}</h4>
-              <strong>EMPLOYEES</strong>
+                  <strong>EMPLOYEES</strong>
                 </div>
               </li>
             </ul>
@@ -124,12 +126,13 @@
       </div>
       <div class="col-md-12 zeropd">
         <div class="client">
-          <flex-slider flex-slide="item in allClients track by $index" animation="slide" item-width="230" item-margin="5" animationloop="true" move="1" slideshow-Speed="2000">
-              <li>
-                <div class="cl-box">
-                    <img ng-src="{{item.logo | uploadpath}}" alt="">
-                </div>
-              </li>
+          <flex-slider flex-slide="item in allClients track by $index" animation="slide" item-width="230" item-margin="5" animationloop="true"
+            move="1" slideshow-Speed="2000">
+            <li>
+              <div class="cl-box">
+                <img ng-src="{{item.logo | uploadpath}}" alt="">
+              </div>
+            </li>
           </flex-slider>
 
         </div>
@@ -147,15 +150,15 @@
         </div>
         <div class="pt90">
           <div class="col-md-4" ng-repeat="data in journey |orderBy:'-date' |limitTo:3 ">
-            <div class="j2" >
+            <div class="j2">
               <div class="jr2-text display-inline">
                 <h4 class="color-red year-r font-norica">{{data.date | date :'yyyy'}}</h4>
-                <div  ng-bind-html="data.content">
-</div>
+                <div ng-bind-html="data.content">
+                </div>
               </div>
-            <div class="display-inline jr2-img" ng-if="data.journeyimage">
-                  <img ng-src="{{data.journeyimage | uploadpath}}" alt="" class="img-responsive">
-            </div>
+              <div class="display-inline jr2-img" ng-if="data.journeyimage">
+                <img ng-src="{{data.journeyimage | uploadpath}}" alt="" class="img-responsive">
+              </div>
             </div>
           </div>
           <!-- <div class="col-md-4">
@@ -203,28 +206,29 @@
     <div class="news-slider">
       <div class="container">
         <div class="row">
-      <div class="col-md-12">
-        <div class="text-center">
-          <h1 class="text-up color-white font-bold font-revelution ft-40">LATEST NEWS</h1>
-        </div>
-        <div class="nw-slider " ng-if="latestNews">
-        <flex-slider flex-slide="item in latestNews|orderBy:'-date' track by $index" animation="slide" item-width="320" item-margin="60" animationloop="true" move="1" slideshow-Speed="2000">
-        <li>
-          <div class="nw-box" ui-sref="news-detail({id:item._id})">
-            <div class="al-relative img-animated">
-              <img ng-src="{{item.homepageimage | uploadpath}}" alt="" class="hover-sec">
-              <div class="date-sec">{{item.date | date :'MMMM y'}}</div>
+          <div class="col-md-12">
+            <div class="text-center">
+              <h1 class="text-up color-white font-bold font-revelution ft-40">LATEST NEWS</h1>
             </div>
-            <div class="nw-title">
-              <p class="color-white text-cap">{{item.name}}</p>
-            </div>
-            <div class="nw-link">
-              <a ui-sref="news-detail({id:item._id})" class="">Read more</a>
-            </div>
-          </div>
-        </li>
-        </flex-slider>
-        <!-- <flex-slider flex-slide="item in news track by $index" animation="slide" item-width="320" item-margin="60" animationloop="true" move="1" slideshow-Speed="2000">
+            <div class="nw-slider " ng-if="latestNews">
+              <flex-slider flex-slide="item in latestNews|orderBy:'-date' track by $index" animation="slide" item-width="320" item-margin="60"
+                animationloop="true" move="1" slideshow-Speed="2000">
+                <li>
+                  <div class="nw-box" ui-sref="news-detail({id:item._id})">
+                    <div class="al-relative img-animated">
+                      <img ng-src="{{item.homepageimage | uploadpath}}" alt="" class="hover-sec">
+                      <div class="date-sec">{{item.date | date :'MMMM y'}}</div>
+                    </div>
+                    <div class="nw-title">
+                      <p class="color-white text-cap">{{item.name}}</p>
+                    </div>
+                    <div class="nw-link">
+                      <a ui-sref="news-detail({id:item._id})" class="">Read more</a>
+                    </div>
+                  </div>
+                </li>
+              </flex-slider>
+              <!-- <flex-slider flex-slide="item in news track by $index" animation="slide" item-width="320" item-margin="60" animationloop="true" move="1" slideshow-Speed="2000">
         <li>
           <div class="nw-box" ui-sref="news-detail({id:item.id})">
             <div class="al-relative img-animated">
@@ -240,8 +244,8 @@
           </div>
         </li>
         </flex-slider> -->
-        </div>
-      </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -249,17 +253,18 @@
 
 </section>
 <section>
-  <div class="al-relative">
-<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4457.06591579484!2d72.76595935090985!3d21.153706937399495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e510c7130eb%3A0x35506354c4ef7dea!2sAlpha+Plastomers!5e0!3m2!1sen!2sin!4v1482304925785" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+  <div class="al-relative map-home">
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4457.06591579484!2d72.76595935090985!3d21.153706937399495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e510c7130eb%3A0x35506354c4ef7dea!2sAlpha+Plastomers!5e0!3m2!1sen!2sin!4v1482304925785" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 
-<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.3235046557306!2d77.8134780151113!3d29.883777781941134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUzJzAxLjYiTiA3N8KwNDgnNTYuNCJF!5e0!3m2!1sen!2sin!4v1484388374681" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.055452974861!2d72.76811192697093!3d21.153009642259363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e510c7130eb%3A0x35506354c4ef7dea!2sAlpha+Plastomers!5e0!3m2!1sen!2sin!4v1484894956712" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-  <div class="add">
-    <h4 class="color-red font-bold font-keem text-up">Alpha Plastomers</h4>
-    <i class="fa fa-phone"> <span>+91 72019 89000</span></i> <br>
-    <i class="fa fa-envelope"> <span>info@alpha.co.in</span></i> <br>
-    <i class="fa fa-home"> <span class="main-add">506, Union Heights, <br> Beside Rahulraj Mall, Vesu <br> Surat-395 007, Gujarat, INDIA</span></i>
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.3235046557306!2d77.8134780151113!3d29.883777781941134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUzJzAxLjYiTiA3N8KwNDgnNTYuNCJF!5e0!3m2!1sen!2sin!4v1484388374681" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.055452974861!2d72.76811192697093!3d21.153009642259363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e510c7130eb%3A0x35506354c4ef7dea!2sAlpha+Plastomers!5e0!3m2!1sen!2sin!4v1484894956712"
+      width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="add">
+      <h4 class="color-red font-bold font-keem text-up">Alpha Plastomers</h4>
+      <i class="fa fa-phone"> <span>+91 72019 89000</span></i> <br>
+      <i class="fa fa-envelope"> <span>info@alpha.co.in</span></i> <br>
+      <i class="fa fa-home"> <span class="main-add">506, Union Heights, <br> Beside Rahulraj Mall, Vesu <br> Surat-395 007, Gujarat, INDIA</span></i>
+    </div>
   </div>
-</div>
   </div>
 </section>
