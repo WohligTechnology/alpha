@@ -1503,6 +1503,17 @@ footer {
     font-family: 'Reem Kufi';
 }
 
+.pdf:hover,
+&:active,
+&:focus {
+    color: white;
+    text-decoration: underline;
+}
+
+.inline {
+    display: inline-block;
+}
+
 ///pagination
 .custom-pagination {
     // position: relative;
