@@ -72,8 +72,7 @@ sans-serif !default;
 }
 
 .col-flex {
-    @include flex(1);
-    // flex: 0 0 20%;
+    @include flex(1); // flex: 0 0 20%;
     // max-width: 20%;
 }
 
@@ -119,8 +118,7 @@ a {
 
 footer {
     font-size: 12px;
-    background-color: #eee;
-    // padding: 5px 0 0;
+    background-color: #eee; // padding: 5px 0 0;
     p {
         margin: 0;
     }
@@ -176,12 +174,10 @@ footer {
         height: auto;
     }
     .flex-prev {
-        left: 10px;
-        // left: 10px !important;
+        left: 10px; // left: 10px !important;
     }
     .flex-next {
-        right: 10px;
-        // right: 10px !important;
+        right: 10px; // right: 10px !important;
     }
 }
 
@@ -332,11 +328,9 @@ footer {
         }
         p:last-child {
             padding-bottom: 0;
-        }
-        // margin-top: 30px;
+        } // margin-top: 30px;
         .vis-head {
-            padding-top: 35px;
-            // font-weight: bold;
+            padding-top: 35px; // font-weight: bold;
         }
     }
     .content-sec {
@@ -498,8 +492,7 @@ footer {
         .slides {
             img {
                 height: auto;
-                -moz-user-select: none;
-                // width: auto;
+                -moz-user-select: none; // width: auto;
             }
         }
         .flex-control-nav {
@@ -602,8 +595,7 @@ footer {
                 background: #fff;
                 padding: 16px;
                 position: relative;
-                height: 200px;
-                // width: 230px!important;
+                height: 200px; // width: 230px!important;
                 padding: 0;
                 .cl-box {
                     position: absolute;
@@ -752,8 +744,7 @@ footer {
     position: relative;
     .jr2-text {
         width: 130px;
-        position: absolute;
-        // left: 0;
+        position: absolute; // left: 0;
         // top: 66px;
         left: -7px;
         top: 61px;
@@ -1210,8 +1201,7 @@ footer {
 
 .timeline li .tl-circ {
     position: absolute;
-    top: 65px;
-    // top: 79px;
+    top: 65px; // top: 79px;
     left: 50%;
     text-align: center;
     background: #fd131b;
@@ -1298,8 +1288,7 @@ footer {
 .tl-data {
     position: absolute;
     top: 50%;
-    transform: translatey(-50%);
-    // width: 100%;
+    transform: translatey(-50%); // width: 100%;
     padding: 0 10px;
     width: 98%;
 }
@@ -1503,9 +1492,7 @@ footer {
     font-family: 'Reem Kufi';
 }
 
-.pdf:hover,
-&:active,
-&:focus {
+.pdf:hover {
     color: white;
     text-decoration: underline;
 }
