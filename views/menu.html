@@ -1,7 +1,7 @@
 <ul class="nav navbar-nav hidden-xs">
   <li ng-repeat="menu in navigation" class="{{menu.classis}}">
-    <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor" class="dropdown-toggle" >{{menu.name}}</a>
-    <a href="{{menu.link}}" ng-if="menu.link" class="dropdown-toggle" >{{menu.name}}</a>
+    <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor" class="dropdown-toggle">{{menu.name}}</a>
+    <a href="{{menu.link}}" ng-if="menu.link" class="dropdown-toggle">{{menu.name}}</a>
     <ul class="drop-menu dropdown-menu" ng-if="menu.subnav!='';">
       <li ng-repeat="submenu in menu.subnav" class="dropdown-submenu" ng-class="{{submenu.classis}}">
         <a ui-sref="{{submenu.anchor}}" ng-if="submenu.anchor" class="dropdown-toggle" ui-sref-active="{class: 'active', state: '{{submenu.anchor}}'}">{{submenu.name}}</a>
@@ -17,7 +17,7 @@
   </li>
 </ul>
 <ul class="nav navbar-nav hidden-md hidden-lg hidden-sm">
-<li  class="dropdown">
+  <li class="dropdown">
     <a ui-sref="" ng-click="viewDropdown = !viewDropdown">
       overview
     </a>
@@ -95,5 +95,5 @@
     </a>
   </li>
 
-    
+
 </ul>
