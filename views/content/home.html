@@ -4,9 +4,8 @@
     <flex-slider flex-slide="s in homeSliders track by $index" prev-text="" next-text="" manual-controls=".custom-pagination li"
       slideshow-Speed="3000" class="hidden-xs" direction-Nav="false">
       <li>
-        <a ui-sref="speciality-film"><img ng-src="{{s.desktopimage | uploadpath}}" class="img-responsive ban-full"></a>
-        <a ui-sref="pof"><img ng-src="{{s.desktopimage | uploadpath}}" class="img-responsive ban-full"></a>
-
+        <a href="{{s.url}}"><img ng-src="{{s.desktopimage | uploadpath}}" class="img-responsive ban-full"></a>
+        <!--<a href="pof"><img ng-src="{{s.desktopimage | uploadpath}}" class="img-responsive ban-full"></a>-->
       </li>
     </flex-slider>
 
