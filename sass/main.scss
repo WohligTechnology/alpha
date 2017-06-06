@@ -458,6 +458,14 @@ footer {
             text-transform: uppercase;
         }
     }
+    ul.reward {
+        padding-left: 15px;
+        color: #fff;
+        li {
+            line-height: 180%;
+            list-style-type: disc;
+        }
+    }
 }
 
 .nav>li>a {
